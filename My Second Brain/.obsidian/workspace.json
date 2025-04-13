@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5. 📅 Daily Notes/🔆 13-04-2025.md",
+                "file": "1. 📌 Areas/🙏 Bible Study/Prayers.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "🔆 13-04-2025"
+              "title": "Prayers"
             }
           }
         ]
@@ -183,13 +183,14 @@
       "templater-obsidian:Templater": false,
       "yet-another-obsidian-synchronizer:YAOS": false,
       "smart-connections:Open: View Smart Connections": false,
-      "smart-connections:Open: Smart Chat Conversation": false
+      "smart-connections:Open: Smart Chat Conversation": false,
+      "github-sync:Sync with Remote": false
     }
   },
   "active": "450c73b86a5b3296",
   "lastOpenFiles": [
-    "1. 📌 Areas/🙏 Bible Study/Prayers.md",
     "5. 📅 Daily Notes/🔆 13-04-2025.md",
+    "1. 📌 Areas/🙏 Bible Study/Prayers.md",
     "1. 📌 Areas/ii 🌱 Personal Development/El Cuidado/Untitled.md",
     "1. 📌 Areas/ii 🌱 Personal Development/El Cuidado/UI.canvas",
     "5. 📅 Daily Notes/🔆 12-04-2025.md",
