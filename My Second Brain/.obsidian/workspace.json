@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 📌 Areas/ii 🌱 Personal Development/El Cuidado/Untitled.md",
+                "file": "5. 📅 Daily Notes/🔆 13-04-2025.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "🔆 13-04-2025"
             }
           }
         ]
@@ -170,27 +170,29 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "yet-another-obsidian-synchronizer:YAOS": false,
-      "remotely-save:Remotely Save": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
       "gemini-assistant:New Gemini chat": false,
+      "remotely-save:Remotely Save": false,
       "obisidian-note-linker:Note Linker": false,
       "templater-obsidian:Templater": false,
-      "audio-recorder:Start/stop recording": false,
+      "yet-another-obsidian-synchronizer:YAOS": false,
       "smart-connections:Open: View Smart Connections": false,
       "smart-connections:Open: Smart Chat Conversation": false
     }
   },
   "active": "450c73b86a5b3296",
   "lastOpenFiles": [
+    "1. 📌 Areas/🙏 Bible Study/Prayers.md",
+    "5. 📅 Daily Notes/🔆 13-04-2025.md",
+    "1. 📌 Areas/ii 🌱 Personal Development/El Cuidado/Untitled.md",
     "1. 📌 Areas/ii 🌱 Personal Development/El Cuidado/UI.canvas",
     "5. 📅 Daily Notes/🔆 12-04-2025.md",
-    "1. 📌 Areas/ii 🌱 Personal Development/El Cuidado/Untitled.md",
     "5. 📅 Daily Notes/🔆 08-04-2025.md",
     "1. 📌 Areas/ii 🌱 Personal Development/Integrion/AI Team.md",
     "1. 📌 Areas/ii 🌱 Personal Development/Integrion/Integrion AI.canvas",
@@ -222,7 +224,6 @@
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/HClA-Datacom VI .O Mock Exam Christian.md",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/HClA-Datacom VI .O Mock  Exam Albert.md",
     "7. 🏷️ Misc/Assets/Pasted image 20250326100552.png",
-    "2. ✅ Projects/🎓 Final Year Project.md",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/⚡Problem Set 3 (conflict 2025-02-03-15-47-26).canvas",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/⚡Problem Set 3 (conflict 2025-02-01-11-01-37).canvas",
     "1. 📌 Areas/ii 🌱 Personal Development/TechCrush BootCamp/TECHCRUSH MOBILE DEVELOPMENT BOOTCAMP OUTLINE - Google Docs.pdf",
