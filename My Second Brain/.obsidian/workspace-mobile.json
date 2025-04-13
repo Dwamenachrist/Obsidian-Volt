@@ -13,8 +13,8 @@
             "state": {
               "type": "gemini-chat-view",
               "state": {},
-              "icon": "message-circle",
-              "title": "Gemini Chat"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -23,8 +23,8 @@
             "state": {
               "type": "gemini-chat-view",
               "state": {},
-              "icon": "message-circle",
-              "title": "Gemini Chat"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -97,8 +97,8 @@
             "state": {
               "type": "gemini-chat-view",
               "state": {},
-              "icon": "message-circle",
-              "title": "Gemini Chat"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -107,8 +107,8 @@
             "state": {
               "type": "gemini-chat-view",
               "state": {},
-              "icon": "message-circle",
-              "title": "Gemini Chat"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -117,8 +117,8 @@
             "state": {
               "type": "gemini-chat-view",
               "state": {},
-              "icon": "message-circle",
-              "title": "Gemini Chat"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -151,8 +151,8 @@
             "state": {
               "type": "gemini-chat-view",
               "state": {},
-              "icon": "message-circle",
-              "title": "Gemini Chat"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -161,8 +161,8 @@
             "state": {
               "type": "gemini-chat-view",
               "state": {},
-              "icon": "message-circle",
-              "title": "Gemini Chat"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -171,7 +171,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🔆 19-03-2025.md",
+                "file": "5. 📅 Daily Notes/🔆 13-04-2025.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -186,7 +186,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "🔆 19-03-2025"
+              "title": "🔆 13-04-2025"
             }
           }
         ],
@@ -331,8 +331,8 @@
         "state": {
           "type": "copilot-chat-view",
           "state": {},
-          "icon": "message-square",
-          "title": "Copilot"
+          "icon": "lucide-file",
+          "title": "Plugin no longer active"
         }
       }
     ],
@@ -340,19 +340,19 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "audio-recorder:Start/stop recording": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "remotely-save:Remotely Save": false,
-      "gemini-assistant:New Gemini chat": false,
-      "copilot:Open Copilot Chat": false
+      "command-palette:Open command palette": false
     }
   },
   "active": "5fbd1acfd81d5f2b",
   "lastOpenFiles": [
+    "🔆 19-03-2025.md",
+    "5. 📅 Daily Notes/🔆 13-04-2025.md",
     "5. 📅 Daily Notes/🔆 28-02-2025.md",
     "5. 📅 Daily Notes/🔆 09-03-2025.md",
     "7. 🏷️ Misc/Assets/image_2025-03-12_11-02-05.jpg",
@@ -389,8 +389,6 @@
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Quizzes/16 WLAN Overview.md",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Quizzes/17 WAN Technologies.md",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/AI 313/Search, Games and Problem Solving.md",
-    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/AI 313/AI 2022-2023 Questions and Solutions.md",
-    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/Problem set 5.md",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/Group Project.canvas",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/⚡Problem Set 4.canvas",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/⚡Problem Set 3.canvas",
