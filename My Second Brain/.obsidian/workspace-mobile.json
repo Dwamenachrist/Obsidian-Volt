@@ -56,17 +56,10 @@
             "id": "3ec1ef1e4d54561c",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "1. 📌 Areas/i 💻 Computer Science/📚 Courses/⚡Discrete Mathematics (Math 359)/⚡Problem Set 3.canvas",
-                "viewState": {
-                  "x": 325.84545982341945,
-                  "y": -1784.1254121626598,
-                  "zoom": -2.1426883741157043
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "⚡Problem Set 3"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           },
           {
@@ -164,7 +157,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 📌 Areas/🙏 Bible Study/Prayers.md",
+                "file": "5. 📅 Daily Notes/🔆 13-04-2025.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -179,7 +172,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Prayers"
+              "title": "🔆 13-04-2025"
             }
           }
         ],
@@ -349,6 +342,7 @@
   },
   "active": "5fbd1acfd81d5f2b",
   "lastOpenFiles": [
+    "1. 📌 Areas/🙏 Bible Study/Prayers.md",
     "🔆 18-02-2025.md",
     "🔆 11-01-2025.md",
     "5. 📅 Daily Notes/🔆 13-04-2025.md",
@@ -386,7 +380,6 @@
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Quizzes/05 IP ROUTING.md",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Quizzes/19 IPv6 Basics.md",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Quizzes/06 OSPF BASICS.md",
-    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Quizzes/16 WLAN Overview.md",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/Group Project.canvas",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/⚡Problem Set 4.canvas",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/⚡Problem Set 3.canvas",
