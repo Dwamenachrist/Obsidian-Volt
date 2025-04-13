@@ -1,0 +1,26 @@
+{
+  "nodes": [
+    {
+      "id": "c09943eedcec9ff5",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250201104103.png",
+      "styleAttributes": {},
+      "x": -420,
+      "y": -240,
+      "width": 400,
+      "height": 230
+    },
+    {
+      "id": "11fc1681269ee49b",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250201104118.png",
+      "styleAttributes": {},
+      "x": 60,
+      "y": -255,
+      "width": 400,
+      "height": 261
+    }
+  ],
+  "edges": [],
+  "metadata": {}
+}

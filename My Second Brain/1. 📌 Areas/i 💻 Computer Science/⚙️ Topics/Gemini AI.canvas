@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{
+			"id":"913963ca16105a53",
+			"type":"link",
+			"url":"https://gemini.google.com/u/3/gem/brainstormer/002117f2e715673a",
+			"styleAttributes":{},
+			"x":-760,
+			"y":-660,
+			"width":1060,
+			"height":1240
+		},
+		{
+			"id":"2afc422f6a316847",
+			"type":"link",
+			"url":"https://g.co/gemini/share/f771bb86d620",
+			"styleAttributes":{},
+			"x":380,
+			"y":-635,
+			"width":880,
+			"height":955
+		}
+	],
+	"edges":[],
+	"metadata":{}
+}

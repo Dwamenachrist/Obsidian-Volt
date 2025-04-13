@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "id": "cb57cc2f21974899",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 1560,
+      "y": -540,
+      "width": 1190,
+      "height": 914,
+      "color": "4",
+      "label": "Completed Screens"
+    },
+    {
+      "id": "6ce48c444f6f0c64",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 160,
+      "y": -540,
+      "width": 1190,
+      "height": 914,
+      "color": "3",
+      "label": "Screens In progress"
+    },
+    {
+      "id": "ec59655907a94b7b",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 160,
+      "y": 480,
+      "width": 1190,
+      "height": 898,
+      "color": "1",
+      "label": "Screens not yet started"
+    },
+    {
+      "id": "afcf9c40a737bc58",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -1040,
+      "y": -540,
+      "width": 1020,
+      "height": 914,
+      "color": "2",
+      "label": "Research"
+    },
+    {
+      "id": "05e4f7b8491f5832",
+      "type": "link",
+      "url": "https://codecanyon.net/item/mova-movie-streaming-react-native-expo-app-ui-kit/55975289#:~:text=Mova%20is%20a%20comprehensive%20and%20feature-rich%20react%20native,creating%20movie%20streaming%20application%20using%20react%20native%20expo.",
+      "styleAttributes": {},
+      "x": -1000,
+      "y": -420,
+      "width": 940,
+      "height": 780
+    },
+    {
+      "id": "c5c95750f662055c",
+      "type": "text",
+      "text": "## Current Project Idea",
+      "styleAttributes": {},
+      "x": -1000,
+      "y": -520,
+      "width": 310,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "049733d5f4f5d228",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/WhatsApp Image 2025-03-24 at 09.00.06_16cb2d11.jpg",
+      "styleAttributes": {},
+      "x": 1560,
+      "y": 560,
+      "width": 400,
+      "height": 283
+    },
+    {
+      "id": "152abd4a3634909e",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250324103629.png",
+      "styleAttributes": {},
+      "x": -1000,
+      "y": 706,
+      "width": 200,
+      "height": 137
+    },
+    {
+      "id": "195d2086f381aafe",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250324103609.png",
+      "styleAttributes": {},
+      "x": -720,
+      "y": 1560,
+      "width": 936,
+      "height": 640
+    }
+  ],
+  "edges": [],
+  "metadata": {}
+}

@@ -1,0 +1,160 @@
+{
+  "main": {
+    "id": "7b5160946a4f0e04",
+    "type": "split",
+    "children": [
+      {
+        "id": "a7bc287688546211",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b8e3450e4720620b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "My first Setup.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7b904138186aa83f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "First Setup Gemini version.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1a49644e55a5c09e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Note Title.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cabbf909ddd515d1",
+    "type": "split",
+    "children": [
+      {
+        "id": "13f5aa1be34d6367",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ecb402a738ebbf7a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4b15eda3064a5b91",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#oop",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6cf84fddfe8a3dfc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 245.5110321044922
+  },
+  "right": {
+    "id": "1ed8f527b26b5cbb",
+    "type": "split",
+    "children": [
+      {
+        "id": "b6878bb20d82c8e8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9cbd7cf6cf40b588",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fec060a3d546a8e2",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 748.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "remotely-save:Remotely Save": false,
+      "gemini-assistant:New Gemini chat": false,
+      "copilot:Open Copilot Chat": false
+    }
+  },
+  "active": "1a49644e55a5c09e",
+  "lastOpenFiles": [
+    "First Setup Gemini version.md",
+    "Note Title.md",
+    "Untitled.canvas",
+    "My first Setup.md",
+    "Areas (Major Areas of my life)/Computer.md",
+    "Untitled 2",
+    "Untitled 1",
+    "Areas (Major Areas of my life)",
+    "Welcome.md",
+    "Assets"
+  ]
+}

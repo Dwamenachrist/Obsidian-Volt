@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "8e2de50fb45db9d9",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -500,
+      "y": -340,
+      "width": 446,
+      "height": 399,
+      "label": "Phase 1"
+    },
+    {
+      "id": "8b62f6acb2e07bfc",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 60,
+      "y": -340,
+      "width": 446,
+      "height": 399,
+      "label": "Phase 2"
+    },
+    {
+      "id": "dcbd0aab30154e48",
+      "type": "text",
+      "text": "**Phase 1: Foundational Concepts**\n\n**What is a Database?**\n\nImagine a really well-organized digital filing cabinet. That's essentially what a database is! It's a structured set of data that is stored and accessed electronically. Instead of messy folders and piles of paper, a database keeps information neatly organized and easily accessible. We need databases because they allow us to:\n\n- **Store vast amounts of data:** From customer details to financial transactions, databases can handle it all.\n- **Easily access and retrieve data:** Need a specific customer's phone number? A database can find it in a snap.\n- **Keep data consistent and accurate:** Databases enforce rules to prevent errors and ensure data quality.\n- **Share data among multiple users:** Many people can access and work with the same data simultaneously.\n\nThere are different types of databases, like relational databases (which we'll focus on) and NoSQL databases. Think of relational databases as the classic, reliable type, while NoSQL databases are more modern and flexible, often used for big data and web applications.\n\n**Key Terms**\n\nNow, let's learn some essential database vocabulary:\n\n- **Tables:** Think of these as the individual drawers in our digital filing cabinet. Each table holds a specific type of information, like \"Customers\" or \"Orders.\"\n- **Rows:** These are like the individual files within a drawer. Each row represents a single record, such as a specific customer or a particular order.\n- **Columns:** These are the labels on the file folders. Each column represents a specific attribute, like \"Customer Name\" or \"Order Date.\"\n- **Relationships:** Just like in the real world, data can be related! Relationships connect tables based on common attributes. For example, a \"Customers\" table might be linked to an \"Orders\" table, showing which customer placed which orders.\n- **Keys:** These are special columns that help us identify and connect data. A primary key uniquely identifies each row in a table (like a Customer ID), while a foreign key links rows in different tables.\n- **Schemas:** This is the blueprint of our database. It defines the tables, columns, data types, and relationships.\n\n**Introduction to Relational Databases**\n\nRelational databases are the most common type. They organize data into tables with rows and columns, and use relationships to connect the tables. This structure makes it efficient to store and retrieve data.\n\nOne of the key strengths of relational databases is their ability to ensure data integrity through ACID properties:\n\n- **Atomicity:** All changes within a transaction are treated as a single unit. Either all changes are applied, or none are, preventing partial updates.\n- **Consistency:** Data must meet predefined rules and constraints. This ensures that the data remains valid and meaningful.\n- **Isolation:** Concurrent transactions are isolated from each other, preventing conflicts and ensuring data accuracy.\n- **Durability:** Once a transaction is committed, the changes are permanent, even in the event of a system failure.\n\n**Normalization**\n\nNormalization is like tidying up our digital filing cabinet to make it super-efficient. It's a process of organizing data to:\n\n- **Reduce redundancy:** Avoid storing the same information multiple times, saving space and reducing the risk of inconsistencies.\n- **Ensure data integrity:** Maintain data accuracy and prevent anomalies when inserting, updating, or deleting data.\n\nThink of it this way: if you had a customer's address stored in multiple places, and the customer moves, you'd have to update it everywhere! Normalization helps avoid this by storing each piece of information only once.",
+      "styleAttributes": {},
+      "x": -480,
+      "y": -320,
+      "width": 409,
+      "height": 358
+    },
+    {
+      "id": "e5ccd26bae57bdae",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/WhatsApp Image 2025-02-03 at 22.09.04_185aba1b.jpg",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": -475,
+      "y": 180,
+      "width": 399,
+      "height": 384
+    }
+  ],
+  "edges": [],
+  "metadata": {}
+}

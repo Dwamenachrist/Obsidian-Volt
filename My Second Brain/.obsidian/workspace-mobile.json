@@ -1,0 +1,413 @@
+{
+  "main": {
+    "id": "c0b2afbe4feef0e1",
+    "type": "split",
+    "children": [
+      {
+        "id": "d3e2453c544e4d78",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f9e29cfd6be1875",
+            "type": "leaf",
+            "state": {
+              "type": "gemini-chat-view",
+              "state": {},
+              "icon": "message-circle",
+              "title": "Gemini Chat"
+            }
+          },
+          {
+            "id": "db63ae8290480766",
+            "type": "leaf",
+            "state": {
+              "type": "gemini-chat-view",
+              "state": {},
+              "icon": "message-circle",
+              "title": "Gemini Chat"
+            }
+          },
+          {
+            "id": "1a016c28c5c93a23",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. 📌 Areas/🙏 Bible Study/📜 Sermons.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📜 Sermons"
+            }
+          },
+          {
+            "id": "7dd7cf8ce21414be",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "1. 📌 Areas/i 💻 Computer Science/📚 Courses/⚡Discrete Mathematics (Math 359)/Group Project.canvas",
+                "viewState": {
+                  "x": 124.04850380885887,
+                  "y": -606.0184746173042,
+                  "zoom": -2.1302027024296875
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Group Project"
+            }
+          },
+          {
+            "id": "3ec1ef1e4d54561c",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "1. 📌 Areas/i 💻 Computer Science/📚 Courses/⚡Discrete Mathematics (Math 359)/⚡Problem Set 3.canvas",
+                "viewState": {
+                  "x": 325.84545982341945,
+                  "y": -1784.1254121626598,
+                  "zoom": -2.1426883741157043
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "⚡Problem Set 3"
+            }
+          },
+          {
+            "id": "ac397376b40e51c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🔆 29-01-2025.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "🔆 29-01-2025"
+            }
+          },
+          {
+            "id": "452c184a6c451144",
+            "type": "leaf",
+            "state": {
+              "type": "gemini-chat-view",
+              "state": {},
+              "icon": "message-circle",
+              "title": "Gemini Chat"
+            }
+          },
+          {
+            "id": "7f8b81a47aa8347d",
+            "type": "leaf",
+            "state": {
+              "type": "gemini-chat-view",
+              "state": {},
+              "icon": "message-circle",
+              "title": "Gemini Chat"
+            }
+          },
+          {
+            "id": "493b1ae69dab6fd7",
+            "type": "leaf",
+            "state": {
+              "type": "gemini-chat-view",
+              "state": {},
+              "icon": "message-circle",
+              "title": "Gemini Chat"
+            }
+          },
+          {
+            "id": "60b940e099674615",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. 📌 Areas/i 💻 Computer Science/📚 Courses/Computer Networks/HACIA-Datacom VI .O Mock Exam Kubra.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "HACIA-Datacom VI .O Mock Exam Kubra"
+            }
+          },
+          {
+            "id": "9a221c6c23e50c88",
+            "type": "leaf",
+            "state": {
+              "type": "gemini-chat-view",
+              "state": {},
+              "icon": "message-circle",
+              "title": "Gemini Chat"
+            }
+          },
+          {
+            "id": "704358b5262b22ac",
+            "type": "leaf",
+            "state": {
+              "type": "gemini-chat-view",
+              "state": {},
+              "icon": "message-circle",
+              "title": "Gemini Chat"
+            }
+          },
+          {
+            "id": "5fbd1acfd81d5f2b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🔆 19-03-2025.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "🔆 19-03-2025"
+            }
+          }
+        ],
+        "currentTab": 12
+      },
+      {
+        "id": "3ec8cdf0b137e7cc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ff96111c6e8b4103",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🔆 02-01-2025.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "🔆 02-01-2025"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3ae9d8cff464c590",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "17d8a564ad6ef6c6",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "8e67dcf52d9abbd9",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "Machi",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "f7bd78857f82dc53",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "168b52d1ef098745",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "078ea81f31c37550",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "d1e9b5c623d13e95",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Untitled.canvas",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "0f7428a48b32318d",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Untitled.canvas",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "b991e3642846b0f2",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Untitled.canvas"
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      },
+      {
+        "id": "6d9359c8d4c7462e",
+        "type": "leaf",
+        "state": {
+          "type": "copilot-chat-view",
+          "state": {},
+          "icon": "message-square",
+          "title": "Copilot"
+        }
+      }
+    ],
+    "currentTab": 3
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "remotely-save:Remotely Save": false,
+      "gemini-assistant:New Gemini chat": false,
+      "copilot:Open Copilot Chat": false
+    }
+  },
+  "active": "5fbd1acfd81d5f2b",
+  "lastOpenFiles": [
+    "5. 📅 Daily Notes/🔆 28-02-2025.md",
+    "5. 📅 Daily Notes/🔆 09-03-2025.md",
+    "7. 🏷️ Misc/Assets/image_2025-03-12_11-02-05.jpg",
+    "7. 🏷️ Misc/Assets/Recording 20250219222449.webm",
+    "7. 🏷️ Misc/Assets/image_2025-03-12_10-58-56.jpg",
+    "7. 🏷️ Misc/Assets/Pasted image 20250318080311.png",
+    "7. 🏷️ Misc/Assets/Pasted image 20250318080621.png",
+    "7. 🏷️ Misc/Assets/Pasted image 20250318080041.png",
+    "7. 🏷️ Misc/Assets/Pasted image 20250318075716.png",
+    "7. 🏷️ Misc/Assets/Pasted image 20250318075108.png",
+    "7. 🏷️ Misc/Assets/Pasted image 20250318075518.png",
+    "7. 🏷️ Misc/Assets/Pasted image 20250318075157.png",
+    "7. 🏷️ Misc/Assets/Pasted image 20250317164427.png",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/307 Mini.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Time Table.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/AI 313/2020 2021.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/AI 313/Semantics.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/AI 313/Uncertainty.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/AI 313/Updated 2023 2024.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/2nd Semester/Resources/Google Drive.md",
+    "1. 📌 Areas/ii 🌱 Personal Development/TechCrush BootCamp/Final Project Development.canvas",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Machine Learning/SLIDES.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Machine Learning/Slide Qusetions.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Machine Learning/Sample Answer 2.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Machine Learning/Sample Answer 1.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Application Setup.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Machine Learning/Eugene Random Answers.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/Graph.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/301 Operating Systems/Chapter 1/Basics.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/301 Operating Systems/Chapter 1/Process.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Quizzes/05 IP ROUTING.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Quizzes/19 IPv6 Basics.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Quizzes/06 OSPF BASICS.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Quizzes/16 WLAN Overview.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Quizzes/17 WAN Technologies.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/AI 313/Search, Games and Problem Solving.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/AI 313/AI 2022-2023 Questions and Solutions.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/Problem set 5.md",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/Group Project.canvas",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/⚡Problem Set 4.canvas",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/⚡Problem Set 3.canvas",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/🗃️ Database Fundermentals (305)/Course Outline.canvas",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/Combinatorial Proofs.canvas",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/Pigeonhole Principle.canvas",
+    "1. 📌 Areas/ii 🌱 Personal Development/TechCrush BootCamp/TECHCRUSH MOBILE DEVELOPMENT BOOTCAMP OUTLINE - Google Docs.pdf",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/⚡Problem Set 3 (conflict 2025-02-03-15-47-26).canvas",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/⚡Problem Set 3 (conflict 2025-02-01-11-01-37).canvas",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Quizzes",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/301 Operating Systems/Chapter 1",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Key note from Slides",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/AI 313",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/2nd Semester/Resources",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Machine Learning",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks",
+    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/301 Operating Systems",
+    "1. 📌 Areas/i 💻 Computer Science/⚙️ Topics/AI Expert System.canvas"
+  ]
+}

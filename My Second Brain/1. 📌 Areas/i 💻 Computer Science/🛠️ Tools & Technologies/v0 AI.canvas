@@ -1,0 +1,16 @@
+{
+  "nodes": [
+    {
+      "id": "eaae4a457d84b94c",
+      "type": "link",
+      "url": "https://v0.dev/",
+      "styleAttributes": {},
+      "x": -540,
+      "y": -320,
+      "width": 960,
+      "height": 800
+    }
+  ],
+  "edges": [],
+  "metadata": {}
+}

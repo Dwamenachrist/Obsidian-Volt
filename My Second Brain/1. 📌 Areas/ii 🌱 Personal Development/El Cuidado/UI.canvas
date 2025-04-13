@@ -1,0 +1,526 @@
+{
+  "nodes": [
+    {
+      "id": "a85ca4b47b4969ab",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -1360,
+      "y": -1200,
+      "width": 3702,
+      "height": 3720,
+      "color": "6",
+      "label": "Patient "
+    },
+    {
+      "id": "dff9bec30fd24b30",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -640,
+      "y": -4480,
+      "width": 2471,
+      "height": 2379,
+      "color": "1",
+      "label": "Setting UP"
+    },
+    {
+      "id": "bf4667defc04cfee",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 2800,
+      "y": -4300,
+      "width": 2146,
+      "height": 2020,
+      "color": "#ffffff",
+      "label": "Helpers"
+    },
+    {
+      "id": "9a1a11704afcb1b5",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250318075518.png",
+      "styleAttributes": {},
+      "x": 1560,
+      "y": 80,
+      "width": 764,
+      "height": 400
+    },
+    {
+      "id": "e3345f8bb064b4ed",
+      "type": "text",
+      "text": "# Sign In",
+      "styleAttributes": {},
+      "x": 820,
+      "y": 600,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "f22a72380fe61dd0",
+      "type": "text",
+      "text": "# Appointment History",
+      "styleAttributes": {},
+      "x": 1720,
+      "y": 600,
+      "width": 360,
+      "height": 60
+    },
+    {
+      "id": "4fdb4bbcbfe44c5f",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250318075716.png",
+      "styleAttributes": {},
+      "x": 1591,
+      "y": 740,
+      "width": 732,
+      "height": 383
+    },
+    {
+      "id": "228aa65d3d08bff5",
+      "type": "text",
+      "text": "# #Technologies Used for El-\n\n\n\n## #Nextjs-Supabase\n## #UI-Shadcn\n\n## #tailwindcss\n",
+      "styleAttributes": {},
+      "x": 540,
+      "y": -4040,
+      "width": 1061,
+      "height": 1029
+    },
+    {
+      "id": "0d3758dba0b7d943",
+      "type": "link",
+      "url": "https://demo-nextjs-with-supabase.vercel.app/",
+      "styleAttributes": {},
+      "x": -520,
+      "y": -4400,
+      "width": 740,
+      "height": 540
+    },
+    {
+      "id": "923f7a667e3cc9da",
+      "type": "link",
+      "url": "https://tailwindcss.com/docs/guides/nextjs",
+      "styleAttributes": {},
+      "x": -520,
+      "y": -3040,
+      "width": 740,
+      "height": 580
+    },
+    {
+      "id": "c1deff0d2663d75f",
+      "type": "link",
+      "url": "https://ui.shadcn.com/docs",
+      "styleAttributes": {},
+      "x": -520,
+      "y": -3740,
+      "width": 740,
+      "height": 600
+    },
+    {
+      "id": "8ef9de15727f8782",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250318080311.png",
+      "styleAttributes": {},
+      "x": -248,
+      "y": 740,
+      "width": 726,
+      "height": 380
+    },
+    {
+      "id": "4bb06f2a81dd0733",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/image_2025-03-12_10-58-56 1.jpg",
+      "styleAttributes": {},
+      "x": -1240,
+      "y": -1060,
+      "width": 700,
+      "height": 552
+    },
+    {
+      "id": "f9f0dffc0e999ea8",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/image_2025-03-12_11-02-05.jpg",
+      "styleAttributes": {},
+      "x": -120,
+      "y": -1032,
+      "width": 759,
+      "height": 496
+    },
+    {
+      "id": "0651e58ed12f7404",
+      "type": "text",
+      "text": "#  Forgot password",
+      "styleAttributes": {},
+      "x": -1320,
+      "y": 600,
+      "width": 300,
+      "height": 60
+    },
+    {
+      "id": "029bc387bebdb5ff",
+      "type": "text",
+      "text": "-- Users table (created by Supabase Auth)\n-- This table will be automatically created and managed by Supabase\n\n-- Patients table\nCREATE TABLE patients (\n  id UUID REFERENCES auth.users(id),\n  first_name TEXT NOT NULL,\n  last_name TEXT NOT NULL,\n  date_of_birth DATE,\n  gender TEXT,\n  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,\n  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP\n);\n\n-- Healthcare Providers table\nCREATE TABLE healthcare_providers (\n  id UUID REFERENCES auth.users(id),\n  name TEXT NOT NULL,\n  specialty TEXT NOT NULL,\n  rating NUMERIC(3,2),\n  availability TEXT,\n  description TEXT,\n  experience TEXT,\n  education TEXT,\n  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,\n  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP\n);\n\n",
+      "styleAttributes": {},
+      "x": 480,
+      "y": -2880,
+      "width": 680,
+      "height": 720
+    },
+    {
+      "id": "8fa12d6d6646665d",
+      "type": "text",
+      "text": "-- Provider Skills table\nCREATE TABLE provider_skills (\n  id SERIAL PRIMARY KEY,\n  provider_id UUID REFERENCES healthcare_providers(id),\n  skill_name TEXT NOT NULL,\n  skill_value INTEGER NOT NULL\n);\n\n-- Medical History table\nCREATE TABLE medical_history (\n  id SERIAL PRIMARY KEY,\n  patient_id UUID REFERENCES patients(id),\n  condition TEXT NOT NULL,\n  diagnosis_date DATE,\n  medication_name TEXT NOT NULL,\n  dosage TEXT,\n  frequency TEXT,\n  start_date DATE,\n  end_date DATE,\n  prescribing_doctor TEXT,\n  notes TEXT,\n  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,\n  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP\n);\n\n-- Appointments table\nCREATE TABLE appointments (\n  id SERIAL PRIMARY KEY,\n  patient_id UUID REFERENCES patients(id),\n  provider_id UUID REFERENCES healthcare_providers(id),\n  appointment_date TIMESTAMP WITH TIME ZONE NOT NULL,\n  status TEXT NOT NULL,\n  notes TEXT,\n  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,\n  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,\n  deleted_at TIMESTAMP WITH TIME ZONE\n);\n\n-- Transactions table\nCREATE TABLE transactions (\n  id SERIAL PRIMARY KEY,\n  user_id UUID REFERENCES auth.users(id),\n  amount NUMERIC(10,2) NOT NULL,\n  transaction_type TEXT NOT NULL,\n  description TEXT,\n  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP\n);",
+      "styleAttributes": {},
+      "x": 1180,
+      "y": -2880,
+      "width": 620,
+      "height": 720
+    },
+    {
+      "id": "7873dff448c18c6e",
+      "type": "text",
+      "text": "![[Pasted image 20250317164248.png]]",
+      "styleAttributes": {},
+      "x": 440,
+      "y": -340,
+      "width": 500,
+      "height": 200
+    },
+    {
+      "id": "658e6af25c5388f0",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250318080041.png",
+      "styleAttributes": {},
+      "x": 620,
+      "y": 740,
+      "width": 762,
+      "height": 400
+    },
+    {
+      "id": "fcbbed7db52d52b9",
+      "type": "text",
+      "text": "# Book Appointment",
+      "styleAttributes": {},
+      "x": 1780,
+      "y": 1240,
+      "width": 340,
+      "height": 60
+    },
+    {
+      "id": "1c524eb32a9ee4f7",
+      "type": "text",
+      "text": "#  Medical History Form",
+      "styleAttributes": {},
+      "x": 950,
+      "y": 1210,
+      "width": 360,
+      "height": 60
+    },
+    {
+      "id": "81d70802544c040e",
+      "type": "text",
+      "text": "# Backend Stuff\ndatabase schema\n\n",
+      "styleAttributes": {},
+      "x": 3360,
+      "y": -480,
+      "width": 2354,
+      "height": 1549
+    },
+    {
+      "id": "3f8e21ed75dfa737",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250317164427.png",
+      "styleAttributes": {},
+      "x": 1230,
+      "y": -1032,
+      "width": 946,
+      "height": 496
+    },
+    {
+      "id": "e357f67f54871963",
+      "type": "text",
+      "text": "# Sign Up",
+      "styleAttributes": {},
+      "x": -120,
+      "y": 600,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "6e3625b0308a3915",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250318075157.png",
+      "styleAttributes": {},
+      "x": 620,
+      "y": 80,
+      "width": 763,
+      "height": 400
+    },
+    {
+      "id": "b0c9f5f1911681a5",
+      "type": "text",
+      "text": "# About Doctor",
+      "styleAttributes": {},
+      "x": -1240,
+      "y": 2120,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "7d8d229af17bdef9",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250326100552.png",
+      "styleAttributes": {},
+      "x": -1240,
+      "y": 1400,
+      "width": 765,
+      "height": 626
+    },
+    {
+      "id": "85ee0d7d3dc4d4be",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250318080621.png",
+      "styleAttributes": {},
+      "x": -1240,
+      "y": 740,
+      "width": 764,
+      "height": 401
+    },
+    {
+      "id": "c31466376fc0c74a",
+      "type": "text",
+      "text": "# Medical  Records",
+      "styleAttributes": {},
+      "x": -1100,
+      "y": 1220,
+      "width": 410,
+      "height": 60
+    },
+    {
+      "id": "7780c726a40234a2",
+      "type": "text",
+      "text": "# Profile Registration ",
+      "styleAttributes": {},
+      "x": -221,
+      "y": 1210,
+      "width": 320,
+      "height": 60
+    },
+    {
+      "id": "f4ad1ca451d1af8b",
+      "type": "text",
+      "text": "# Patient Dashboard",
+      "styleAttributes": {},
+      "x": -1360,
+      "y": -360,
+      "width": 340,
+      "height": 80
+    },
+    {
+      "id": "def372ddad03995a",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250317164806.png",
+      "styleAttributes": {},
+      "x": -1240,
+      "y": 80,
+      "width": 765,
+      "height": 400
+    },
+    {
+      "id": "77b92a1ca1918c9c",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250318075108.png",
+      "styleAttributes": {},
+      "x": -280,
+      "y": 80,
+      "width": 758,
+      "height": 400
+    },
+    {
+      "id": "a3173da81e7cd43f",
+      "type": "text",
+      "text": "# Contact Support",
+      "styleAttributes": {},
+      "x": -160,
+      "y": -380,
+      "width": 380,
+      "height": 100
+    },
+    {
+      "id": "7c327c1467f1ac3d",
+      "type": "link",
+      "url": "https://dribbble.com/",
+      "styleAttributes": {},
+      "x": 2920,
+      "y": -4220,
+      "width": 780,
+      "height": 880
+    },
+    {
+      "id": "c42f2ec800961344",
+      "type": "link",
+      "url": "https://tools.webcrumbs.org/frontend-ai",
+      "styleAttributes": {},
+      "x": 4000,
+      "y": -4220,
+      "width": 760,
+      "height": 880
+    },
+    {
+      "id": "625918f3bedc92c1",
+      "type": "text",
+      "text": "![[Pasted image 20250317164055.png]]",
+      "styleAttributes": {},
+      "x": -980,
+      "y": -360,
+      "width": 580,
+      "height": 280
+    },
+    {
+      "id": "8a9de47f3e24a676",
+      "type": "text",
+      "text": "# Our Healthcare Professionals ",
+      "styleAttributes": {},
+      "x": 1280,
+      "y": -330,
+      "width": 480,
+      "height": 90
+    }
+  ],
+  "edges": [
+    {
+      "id": "3c9e8a03888cf632",
+      "styleAttributes": {},
+      "fromNode": "c1deff0d2663d75f",
+      "fromSide": "right",
+      "toNode": "228aa65d3d08bff5",
+      "toSide": "left"
+    },
+    {
+      "id": "8b97e02cca97a97e",
+      "styleAttributes": {},
+      "fromNode": "0d3758dba0b7d943",
+      "fromSide": "right",
+      "toNode": "228aa65d3d08bff5",
+      "toSide": "left"
+    },
+    {
+      "id": "8fb38941db38bb87",
+      "styleAttributes": {},
+      "fromNode": "923f7a667e3cc9da",
+      "fromSide": "right",
+      "toNode": "228aa65d3d08bff5",
+      "toSide": "left"
+    },
+    {
+      "id": "2d4c6e64a479b385",
+      "styleAttributes": {},
+      "fromNode": "4bb06f2a81dd0733",
+      "fromSide": "bottom",
+      "toNode": "625918f3bedc92c1",
+      "toSide": "top"
+    },
+    {
+      "id": "6f127dc8c3ffbc4a",
+      "styleAttributes": {},
+      "fromNode": "4bb06f2a81dd0733",
+      "fromSide": "bottom",
+      "toNode": "f4ad1ca451d1af8b",
+      "toSide": "top"
+    },
+    {
+      "id": "f0efb287ccfa8cf7",
+      "styleAttributes": {},
+      "fromNode": "f9f0dffc0e999ea8",
+      "fromSide": "bottom",
+      "toNode": "a3173da81e7cd43f",
+      "toSide": "top"
+    },
+    {
+      "id": "55e039632638face",
+      "styleAttributes": {},
+      "fromNode": "f9f0dffc0e999ea8",
+      "fromSide": "bottom",
+      "toNode": "7873dff448c18c6e",
+      "toSide": "top"
+    },
+    {
+      "id": "3e78a8d8d9763fc7",
+      "styleAttributes": {},
+      "fromNode": "3f8e21ed75dfa737",
+      "fromSide": "bottom",
+      "toNode": "8a9de47f3e24a676",
+      "toSide": "top"
+    },
+    {
+      "id": "2d7661fe0f739af1",
+      "styleAttributes": {},
+      "fromNode": "def372ddad03995a",
+      "fromSide": "bottom",
+      "toNode": "0651e58ed12f7404",
+      "toSide": "top"
+    },
+    {
+      "id": "03a418238243234c",
+      "styleAttributes": {},
+      "fromNode": "77b92a1ca1918c9c",
+      "fromSide": "bottom",
+      "toNode": "e357f67f54871963",
+      "toSide": "top"
+    },
+    {
+      "id": "360d4b9317cbb77e",
+      "styleAttributes": {},
+      "fromNode": "6e3625b0308a3915",
+      "fromSide": "bottom",
+      "toNode": "e3345f8bb064b4ed",
+      "toSide": "top"
+    },
+    {
+      "id": "ed012fb6421d2492",
+      "styleAttributes": {},
+      "fromNode": "9a1a11704afcb1b5",
+      "fromSide": "bottom",
+      "toNode": "f22a72380fe61dd0",
+      "toSide": "top"
+    },
+    {
+      "id": "1e536f6c16a96096",
+      "styleAttributes": {},
+      "fromNode": "4fdb4bbcbfe44c5f",
+      "fromSide": "bottom",
+      "toNode": "fcbbed7db52d52b9",
+      "toSide": "top"
+    },
+    {
+      "id": "0bb88caf5a1c11ff",
+      "styleAttributes": {},
+      "fromNode": "658e6af25c5388f0",
+      "fromSide": "bottom",
+      "toNode": "1c524eb32a9ee4f7",
+      "toSide": "top"
+    },
+    {
+      "id": "ad5b437bb4d5c990",
+      "styleAttributes": {},
+      "fromNode": "8ef9de15727f8782",
+      "fromSide": "bottom",
+      "toNode": "7780c726a40234a2",
+      "toSide": "top"
+    },
+    {
+      "id": "a96fd7f905dfc842",
+      "styleAttributes": {},
+      "fromNode": "85ee0d7d3dc4d4be",
+      "fromSide": "bottom",
+      "toNode": "c31466376fc0c74a",
+      "toSide": "top"
+    },
+    {
+      "id": "10fff2526a087dce",
+      "styleAttributes": {},
+      "fromNode": "7d8d229af17bdef9",
+      "fromSide": "bottom",
+      "toNode": "b0c9f5f1911681a5",
+      "toSide": "top"
+    }
+  ],
+  "metadata": {}
+}

@@ -1,0 +1,717 @@
+{
+  "is_obsidian_vault": true,
+  "smart_blocks": {
+    "embed_blocks": true,
+    "min_chars": "300"
+  },
+  "smart_sources": {
+    "single_file_data_path": ".smart-env/smart_sources.json",
+    "embed_model": {
+      "adapter": "transformers",
+      "transformers": {
+        "legacy_transformers": false,
+        "model_key": "TaylorAI/bge-micro-v2"
+      },
+      "TaylorAI/bge-micro-v2": {}
+    },
+    "min_chars": "300",
+    "smart_change": {
+      "active": true
+    }
+  },
+  "file_exclusions": "Untitled",
+  "folder_exclusions": "smart-chats",
+  "smart_view_filter": {
+    "render_markdown": true,
+    "show_full_path": false
+  },
+  "excluded_headings": "",
+  "smart_threads": {
+    "chat_model": {
+      "adapter": "gemini",
+      "openai": {
+        "model_key": "gpt-4o"
+      },
+      "gemini": {
+        "model_key": "gemini-1.5-pro-latest",
+        "api_key": "AIzaSyDMVGCuk8y_VGcAGjL-CUm9BrcageOUCUs",
+        "models": {
+          "gemini-1.0-pro-latest": {
+            "model_name": "gemini-1.0-pro-latest",
+            "id": "gemini-1.0-pro-latest",
+            "max_input_tokens": 30720,
+            "description": "The original Gemini 1.0 Pro model. This model will be discontinued on February 15th, 2025. Move to a newer Gemini version.",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-1.0-pro-latest",
+              "version": "001",
+              "displayName": "Gemini 1.0 Pro Latest",
+              "description": "The original Gemini 1.0 Pro model. This model will be discontinued on February 15th, 2025. Move to a newer Gemini version.",
+              "inputTokenLimit": 30720,
+              "outputTokenLimit": 2048,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 0.9,
+              "topP": 1
+            }
+          },
+          "gemini-1.0-pro": {
+            "model_name": "gemini-1.0-pro",
+            "id": "gemini-1.0-pro",
+            "max_input_tokens": 30720,
+            "description": "The best model for scaling across a wide range of tasks",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-1.0-pro",
+              "version": "001",
+              "displayName": "Gemini 1.0 Pro",
+              "description": "The best model for scaling across a wide range of tasks",
+              "inputTokenLimit": 30720,
+              "outputTokenLimit": 2048,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 0.9,
+              "topP": 1
+            }
+          },
+          "gemini-pro": {
+            "model_name": "gemini-pro",
+            "id": "gemini-pro",
+            "max_input_tokens": 30720,
+            "description": "The best model for scaling across a wide range of tasks",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-pro",
+              "version": "001",
+              "displayName": "Gemini 1.0 Pro",
+              "description": "The best model for scaling across a wide range of tasks",
+              "inputTokenLimit": 30720,
+              "outputTokenLimit": 2048,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 0.9,
+              "topP": 1
+            }
+          },
+          "gemini-1.0-pro-001": {
+            "model_name": "gemini-1.0-pro-001",
+            "id": "gemini-1.0-pro-001",
+            "max_input_tokens": 30720,
+            "description": "The original Gemini 1.0 Pro model version that supports tuning. Gemini 1.0 Pro will be discontinued on February 15th, 2025. Move to a newer Gemini version.",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-1.0-pro-001",
+              "version": "001",
+              "displayName": "Gemini 1.0 Pro 001 (Tuning)",
+              "description": "The original Gemini 1.0 Pro model version that supports tuning. Gemini 1.0 Pro will be discontinued on February 15th, 2025. Move to a newer Gemini version.",
+              "inputTokenLimit": 30720,
+              "outputTokenLimit": 2048,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens",
+                "createTunedModel"
+              ],
+              "temperature": 0.9,
+              "topP": 1
+            }
+          },
+          "gemini-1.0-pro-vision-latest": {
+            "model_name": "gemini-1.0-pro-vision-latest",
+            "id": "gemini-1.0-pro-vision-latest",
+            "max_input_tokens": 12288,
+            "description": "The original Gemini 1.0 Pro Vision model version which was optimized for image understanding. Gemini 1.0 Pro Vision was deprecated on July 12, 2024. Move to a newer Gemini version.",
+            "multimodal": true,
+            "raw": {
+              "name": "models/gemini-1.0-pro-vision-latest",
+              "version": "001",
+              "displayName": "Gemini 1.0 Pro Vision",
+              "description": "The original Gemini 1.0 Pro Vision model version which was optimized for image understanding. Gemini 1.0 Pro Vision was deprecated on July 12, 2024. Move to a newer Gemini version.",
+              "inputTokenLimit": 12288,
+              "outputTokenLimit": 4096,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 0.4,
+              "topP": 1,
+              "topK": 32
+            }
+          },
+          "gemini-pro-vision": {
+            "model_name": "gemini-pro-vision",
+            "id": "gemini-pro-vision",
+            "max_input_tokens": 12288,
+            "description": "The original Gemini 1.0 Pro Vision model version which was optimized for image understanding. Gemini 1.0 Pro Vision was deprecated on July 12, 2024. Move to a newer Gemini version.",
+            "multimodal": true,
+            "raw": {
+              "name": "models/gemini-pro-vision",
+              "version": "001",
+              "displayName": "Gemini 1.0 Pro Vision",
+              "description": "The original Gemini 1.0 Pro Vision model version which was optimized for image understanding. Gemini 1.0 Pro Vision was deprecated on July 12, 2024. Move to a newer Gemini version.",
+              "inputTokenLimit": 12288,
+              "outputTokenLimit": 4096,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 0.4,
+              "topP": 1,
+              "topK": 32
+            }
+          },
+          "gemini-1.5-pro-latest": {
+            "model_name": "gemini-1.5-pro-latest",
+            "id": "gemini-1.5-pro-latest",
+            "max_input_tokens": 2000000,
+            "description": "Alias that points to the most recent production (non-experimental) release of Gemini 1.5 Pro, our mid-size multimodal model that supports up to 2 million tokens.",
+            "multimodal": true,
+            "raw": {
+              "name": "models/gemini-1.5-pro-latest",
+              "version": "001",
+              "displayName": "Gemini 1.5 Pro Latest",
+              "description": "Alias that points to the most recent production (non-experimental) release of Gemini 1.5 Pro, our mid-size multimodal model that supports up to 2 million tokens.",
+              "inputTokenLimit": 2000000,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 40,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-1.5-pro-001": {
+            "model_name": "gemini-1.5-pro-001",
+            "id": "gemini-1.5-pro-001",
+            "max_input_tokens": 2000000,
+            "description": "Stable version of Gemini 1.5 Pro, our mid-size multimodal model that supports up to 2 million tokens, released in May of 2024.",
+            "multimodal": true,
+            "raw": {
+              "name": "models/gemini-1.5-pro-001",
+              "version": "001",
+              "displayName": "Gemini 1.5 Pro 001",
+              "description": "Stable version of Gemini 1.5 Pro, our mid-size multimodal model that supports up to 2 million tokens, released in May of 2024.",
+              "inputTokenLimit": 2000000,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens",
+                "createCachedContent"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 64,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-1.5-pro-002": {
+            "model_name": "gemini-1.5-pro-002",
+            "id": "gemini-1.5-pro-002",
+            "max_input_tokens": 2000000,
+            "description": "Stable version of Gemini 1.5 Pro, our mid-size multimodal model that supports up to 2 million tokens, released in September of 2024.",
+            "multimodal": true,
+            "raw": {
+              "name": "models/gemini-1.5-pro-002",
+              "version": "002",
+              "displayName": "Gemini 1.5 Pro 002",
+              "description": "Stable version of Gemini 1.5 Pro, our mid-size multimodal model that supports up to 2 million tokens, released in September of 2024.",
+              "inputTokenLimit": 2000000,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens",
+                "createCachedContent"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 40,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-1.5-pro": {
+            "model_name": "gemini-1.5-pro",
+            "id": "gemini-1.5-pro",
+            "max_input_tokens": 2000000,
+            "description": "Stable version of Gemini 1.5 Pro, our mid-size multimodal model that supports up to 2 million tokens, released in May of 2024.",
+            "multimodal": true,
+            "raw": {
+              "name": "models/gemini-1.5-pro",
+              "version": "001",
+              "displayName": "Gemini 1.5 Pro",
+              "description": "Stable version of Gemini 1.5 Pro, our mid-size multimodal model that supports up to 2 million tokens, released in May of 2024.",
+              "inputTokenLimit": 2000000,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 40,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-1.5-pro-exp-0801": {
+            "model_name": "gemini-1.5-pro-exp-0801",
+            "id": "gemini-1.5-pro-exp-0801",
+            "max_input_tokens": 2097152,
+            "description": "Experimental release (December 6th, 2024) of Gemini.",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-1.5-pro-exp-0801",
+              "version": "exp-0801",
+              "displayName": "Gemini Experimental 1206",
+              "description": "Experimental release (December 6th, 2024) of Gemini.",
+              "inputTokenLimit": 2097152,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 64,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-1.5-pro-exp-0827": {
+            "model_name": "gemini-1.5-pro-exp-0827",
+            "id": "gemini-1.5-pro-exp-0827",
+            "max_input_tokens": 2097152,
+            "description": "Experimental release (December 6th, 2024) of Gemini.",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-1.5-pro-exp-0827",
+              "version": "exp-1206",
+              "displayName": "Gemini Experimental 1206",
+              "description": "Experimental release (December 6th, 2024) of Gemini.",
+              "inputTokenLimit": 2097152,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 64,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-1.5-flash-latest": {
+            "model_name": "gemini-1.5-flash-latest",
+            "id": "gemini-1.5-flash-latest",
+            "max_input_tokens": 1000000,
+            "description": "Alias that points to the most recent production (non-experimental) release of Gemini 1.5 Flash, our fast and versatile multimodal model for scaling across diverse tasks.",
+            "multimodal": true,
+            "raw": {
+              "name": "models/gemini-1.5-flash-latest",
+              "version": "001",
+              "displayName": "Gemini 1.5 Flash Latest",
+              "description": "Alias that points to the most recent production (non-experimental) release of Gemini 1.5 Flash, our fast and versatile multimodal model for scaling across diverse tasks.",
+              "inputTokenLimit": 1000000,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 40,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-1.5-flash-001": {
+            "model_name": "gemini-1.5-flash-001",
+            "id": "gemini-1.5-flash-001",
+            "max_input_tokens": 1000000,
+            "description": "Stable version of Gemini 1.5 Flash, our fast and versatile multimodal model for scaling across diverse tasks, released in May of 2024.",
+            "multimodal": true,
+            "raw": {
+              "name": "models/gemini-1.5-flash-001",
+              "version": "001",
+              "displayName": "Gemini 1.5 Flash 001",
+              "description": "Stable version of Gemini 1.5 Flash, our fast and versatile multimodal model for scaling across diverse tasks, released in May of 2024.",
+              "inputTokenLimit": 1000000,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens",
+                "createCachedContent"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 64,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-1.5-flash-001-tuning": {
+            "model_name": "gemini-1.5-flash-001-tuning",
+            "id": "gemini-1.5-flash-001-tuning",
+            "max_input_tokens": 16384,
+            "description": "Version of Gemini 1.5 Flash that supports tuning, our fast and versatile multimodal model for scaling across diverse tasks, released in May of 2024.",
+            "multimodal": true,
+            "raw": {
+              "name": "models/gemini-1.5-flash-001-tuning",
+              "version": "001",
+              "displayName": "Gemini 1.5 Flash 001 Tuning",
+              "description": "Version of Gemini 1.5 Flash that supports tuning, our fast and versatile multimodal model for scaling across diverse tasks, released in May of 2024.",
+              "inputTokenLimit": 16384,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens",
+                "createTunedModel"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 64,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-1.5-flash": {
+            "model_name": "gemini-1.5-flash",
+            "id": "gemini-1.5-flash",
+            "max_input_tokens": 1000000,
+            "description": "Alias that points to the most recent stable version of Gemini 1.5 Flash, our fast and versatile multimodal model for scaling across diverse tasks.",
+            "multimodal": true,
+            "raw": {
+              "name": "models/gemini-1.5-flash",
+              "version": "001",
+              "displayName": "Gemini 1.5 Flash",
+              "description": "Alias that points to the most recent stable version of Gemini 1.5 Flash, our fast and versatile multimodal model for scaling across diverse tasks.",
+              "inputTokenLimit": 1000000,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 40,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-1.5-flash-exp-0827": {
+            "model_name": "gemini-1.5-flash-exp-0827",
+            "id": "gemini-1.5-flash-exp-0827",
+            "max_input_tokens": 2097152,
+            "description": "Experimental release (December 6th, 2024) of Gemini.",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-1.5-flash-exp-0827",
+              "version": "exp-1206",
+              "displayName": "Gemini Experimental 1206",
+              "description": "Experimental release (December 6th, 2024) of Gemini.",
+              "inputTokenLimit": 2097152,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 64,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-1.5-flash-002": {
+            "model_name": "gemini-1.5-flash-002",
+            "id": "gemini-1.5-flash-002",
+            "max_input_tokens": 1000000,
+            "description": "Stable version of Gemini 1.5 Flash, our fast and versatile multimodal model for scaling across diverse tasks, released in September of 2024.",
+            "multimodal": true,
+            "raw": {
+              "name": "models/gemini-1.5-flash-002",
+              "version": "002",
+              "displayName": "Gemini 1.5 Flash 002",
+              "description": "Stable version of Gemini 1.5 Flash, our fast and versatile multimodal model for scaling across diverse tasks, released in September of 2024.",
+              "inputTokenLimit": 1000000,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens",
+                "createCachedContent"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 40,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-1.5-flash-8b": {
+            "model_name": "gemini-1.5-flash-8b",
+            "id": "gemini-1.5-flash-8b",
+            "max_input_tokens": 1000000,
+            "description": "Stable version of Gemini 1.5 Flash-8B, our smallest and most cost effective Flash model, released in October of 2024.",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-1.5-flash-8b",
+              "version": "001",
+              "displayName": "Gemini 1.5 Flash-8B",
+              "description": "Stable version of Gemini 1.5 Flash-8B, our smallest and most cost effective Flash model, released in October of 2024.",
+              "inputTokenLimit": 1000000,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "createCachedContent",
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 40,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-1.5-flash-8b-001": {
+            "model_name": "gemini-1.5-flash-8b-001",
+            "id": "gemini-1.5-flash-8b-001",
+            "max_input_tokens": 1000000,
+            "description": "Stable version of Gemini 1.5 Flash-8B, our smallest and most cost effective Flash model, released in October of 2024.",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-1.5-flash-8b-001",
+              "version": "001",
+              "displayName": "Gemini 1.5 Flash-8B 001",
+              "description": "Stable version of Gemini 1.5 Flash-8B, our smallest and most cost effective Flash model, released in October of 2024.",
+              "inputTokenLimit": 1000000,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "createCachedContent",
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 40,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-1.5-flash-8b-latest": {
+            "model_name": "gemini-1.5-flash-8b-latest",
+            "id": "gemini-1.5-flash-8b-latest",
+            "max_input_tokens": 1000000,
+            "description": "Alias that points to the most recent production (non-experimental) release of Gemini 1.5 Flash-8B, our smallest and most cost effective Flash model, released in October of 2024.",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-1.5-flash-8b-latest",
+              "version": "001",
+              "displayName": "Gemini 1.5 Flash-8B Latest",
+              "description": "Alias that points to the most recent production (non-experimental) release of Gemini 1.5 Flash-8B, our smallest and most cost effective Flash model, released in October of 2024.",
+              "inputTokenLimit": 1000000,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "createCachedContent",
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 40,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-1.5-flash-8b-exp-0827": {
+            "model_name": "gemini-1.5-flash-8b-exp-0827",
+            "id": "gemini-1.5-flash-8b-exp-0827",
+            "max_input_tokens": 1000000,
+            "description": "Experimental release (August 27th, 2024) of Gemini 1.5 Flash-8B, our smallest and most cost effective Flash model. Replaced by Gemini-1.5-flash-8b-001 (stable).",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-1.5-flash-8b-exp-0827",
+              "version": "001",
+              "displayName": "Gemini 1.5 Flash 8B Experimental 0827",
+              "description": "Experimental release (August 27th, 2024) of Gemini 1.5 Flash-8B, our smallest and most cost effective Flash model. Replaced by Gemini-1.5-flash-8b-001 (stable).",
+              "inputTokenLimit": 1000000,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 40,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-1.5-flash-8b-exp-0924": {
+            "model_name": "gemini-1.5-flash-8b-exp-0924",
+            "id": "gemini-1.5-flash-8b-exp-0924",
+            "max_input_tokens": 1000000,
+            "description": "Experimental release (September 24th, 2024) of Gemini 1.5 Flash-8B, our smallest and most cost effective Flash model. Replaced by Gemini-1.5-flash-8b-001 (stable).",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-1.5-flash-8b-exp-0924",
+              "version": "001",
+              "displayName": "Gemini 1.5 Flash 8B Experimental 0924",
+              "description": "Experimental release (September 24th, 2024) of Gemini 1.5 Flash-8B, our smallest and most cost effective Flash model. Replaced by Gemini-1.5-flash-8b-001 (stable).",
+              "inputTokenLimit": 1000000,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 40,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-2.0-flash-exp": {
+            "model_name": "gemini-2.0-flash-exp",
+            "id": "gemini-2.0-flash-exp",
+            "max_input_tokens": 1048576,
+            "description": "Gemini 2.0 Flash Experimental",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-2.0-flash-exp",
+              "version": "2.0",
+              "displayName": "Gemini 2.0 Flash Experimental",
+              "description": "Gemini 2.0 Flash Experimental",
+              "inputTokenLimit": 1048576,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens",
+                "bidiGenerateContent"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 40,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-exp-1206": {
+            "model_name": "gemini-exp-1206",
+            "id": "gemini-exp-1206",
+            "max_input_tokens": 2097152,
+            "description": "Experimental release (December 6th, 2024) of Gemini.",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-exp-1206",
+              "version": "exp_1206",
+              "displayName": "Gemini Experimental 1206",
+              "description": "Experimental release (December 6th, 2024) of Gemini.",
+              "inputTokenLimit": 2097152,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 64,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-exp-1121": {
+            "model_name": "gemini-exp-1121",
+            "id": "gemini-exp-1121",
+            "max_input_tokens": 2097152,
+            "description": "Experimental release (December 6th, 2024) of Gemini.",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-exp-1121",
+              "version": "exp-1206",
+              "displayName": "Gemini Experimental 1206",
+              "description": "Experimental release (December 6th, 2024) of Gemini.",
+              "inputTokenLimit": 2097152,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 64,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-exp-1114": {
+            "model_name": "gemini-exp-1114",
+            "id": "gemini-exp-1114",
+            "max_input_tokens": 2097152,
+            "description": "Experimental release (December 6th, 2024) of Gemini.",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-exp-1114",
+              "version": "exp-1206",
+              "displayName": "Gemini Experimental 1206",
+              "description": "Experimental release (December 6th, 2024) of Gemini.",
+              "inputTokenLimit": 2097152,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 64,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-2.0-flash-thinking-exp": {
+            "model_name": "gemini-2.0-flash-thinking-exp",
+            "id": "gemini-2.0-flash-thinking-exp",
+            "max_input_tokens": 32767,
+            "description": "Gemini 2.0 Flash Thinking Experimental",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-2.0-flash-thinking-exp",
+              "version": "2.0",
+              "displayName": "Gemini 2.0 Flash Thinking Experimental",
+              "description": "Gemini 2.0 Flash Thinking Experimental",
+              "inputTokenLimit": 32767,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 64,
+              "maxTemperature": 2
+            }
+          },
+          "gemini-2.0-flash-thinking-exp-1219": {
+            "model_name": "gemini-2.0-flash-thinking-exp-1219",
+            "id": "gemini-2.0-flash-thinking-exp-1219",
+            "max_input_tokens": 32767,
+            "description": "Gemini 2.0 Flash Thinking Experimental",
+            "multimodal": false,
+            "raw": {
+              "name": "models/gemini-2.0-flash-thinking-exp-1219",
+              "version": "2.0",
+              "displayName": "Gemini 2.0 Flash Thinking Experimental",
+              "description": "Gemini 2.0 Flash Thinking Experimental",
+              "inputTokenLimit": 32767,
+              "outputTokenLimit": 8192,
+              "supportedGenerationMethods": [
+                "generateContent",
+                "countTokens"
+              ],
+              "temperature": 1,
+              "topP": 0.95,
+              "topK": 64,
+              "maxTemperature": 2
+            }
+          }
+        }
+      }
+    },
+    "embed_model": {
+      "model_key": "None"
+    },
+    "language": "en",
+    "review_context": false,
+    "lookup_limit": "10",
+    "send_tool_output_in_user_message": false
+  }
+}

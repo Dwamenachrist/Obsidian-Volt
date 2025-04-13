@@ -1,0 +1,498 @@
+{
+  "nodes": [
+    {
+      "id": "77caf8fe195dea37",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -40,
+      "y": -3120,
+      "width": 1180,
+      "height": 2154,
+      "label": "Q1 Answers by Gemini 1.5 pro and Quizlet.com "
+    },
+    {
+      "id": "779702d403ac7b2f",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 1320,
+      "y": -1280,
+      "width": 1180,
+      "height": 1000,
+      "label": "Q4 by Chatgpt 3.5 and Quizlet.com"
+    },
+    {
+      "id": "48cefdb7f3765113",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 1320,
+      "y": 0,
+      "width": 1180,
+      "height": 1000,
+      "label": "Q5 by Gemini 1.5 pro and Quizlet.com"
+    },
+    {
+      "id": "6bbb0fdebdf530cf",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 1320,
+      "y": -2200,
+      "width": 1180,
+      "height": 717,
+      "label": "Q3 Answers by Chatgpt 4.o and Quizlet.com "
+    },
+    {
+      "id": "ad99db87b36c493a",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 1320,
+      "y": -3120,
+      "width": 1180,
+      "height": 717,
+      "label": "Q2 Answers by Chatgpt 4.o and Quizlet.com "
+    },
+    {
+      "id": "454f98679ddb7d1c",
+      "type": "text",
+      "text": "![[Pasted image 20250101232624.png]]",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 1340,
+      "y": -3100,
+      "width": 539,
+      "height": 81
+    },
+    {
+      "id": "c86d8a31f1203b9b",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250102005545.png",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 2080,
+      "y": -3019,
+      "width": 400,
+      "height": 263
+    },
+    {
+      "id": "6ad57483d1a6e46d",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Question 5.png",
+      "styleAttributes": {},
+      "x": -1700,
+      "y": -1260,
+      "width": 379,
+      "height": 400
+    },
+    {
+      "id": "389c532cbf272e0f",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/dm_ps4.pdf",
+      "styleAttributes": {},
+      "x": -1440,
+      "y": -660,
+      "width": 1160,
+      "height": 1340
+    },
+    {
+      "id": "05b7eb85ccd69e01",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Question 4.png",
+      "styleAttributes": {},
+      "x": -2622,
+      "y": -1720,
+      "width": 762,
+      "height": 947
+    },
+    {
+      "id": "ea3456092ef83ec1",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Kenneth Rosen - Discrete Mathematics and Its Applications - 8th edition.pdf",
+      "styleAttributes": {},
+      "x": -2720,
+      "y": -390,
+      "width": 860,
+      "height": 480
+    },
+    {
+      "id": "ff9746770ce13cf9",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Question 17.png",
+      "styleAttributes": {},
+      "x": -1120,
+      "y": -1260,
+      "width": 400,
+      "height": 250
+    },
+    {
+      "id": "09bbc163beaae3b6",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/q15.png",
+      "styleAttributes": {},
+      "x": -1120,
+      "y": -1679,
+      "width": 400,
+      "height": 370
+    },
+    {
+      "id": "8da6327380ec9ac5",
+      "type": "text",
+      "text": "Here’s the full detailed explanation for both questions, step by step, suitable for examination purposes:\n\n---\n\n### **First Question**\n\n#### Problem:\n\nHow many strings of five ASCII characters contain the character `@`?\n\n#### Solution:\n\n1. **Understand the Problem**:\n    \n    - There are 128 ASCII characters in total.\n    - The string is of length 5.\n    - At least one position in the string must have the character `@`.\n2. **Step 1: Total Number of Strings**:\n    \n    - Each of the 5 positions can independently hold any of the 128 ASCII characters.\n    - Therefore, the total number of strings of length 5 is: Total Strings=1285\\text{Total Strings} = 128^5\n3. **Step 2: Strings Without `@`**:\n    \n    - If `@` is excluded, each position in the string can only hold 127 characters (excluding `@`).\n    - The total number of strings of length 5 that do not contain `@` is: Strings Without ‘@‘=1275\\text{Strings Without `@`} = 127^5\n4. **Step 3: Strings Containing `@`**:\n    \n    - To find the number of strings that contain `@`, subtract the number of strings **without** `@` from the total number of strings: Strings Containing ‘@‘=1285−1275\\text{Strings Containing `@`} = 128^5 - 127^5\n5. **Explanation**:\n    \n    - This subtraction removes all strings where `@` does not appear, leaving only those where `@` appears in at least one position.\n\n---\n\n### **Second Question**\n\n#### Problem:\n\nHow many strings of five ASCII characters contain the character `@` **at least once**?\n\n#### Solution:\n\n1. **Step 1: Reframe the Problem**:\n    \n    - \"At least once\" means the string must contain `@` in one or more positions.\n    - We can solve this by using the complement principle.\n2. **Step 2: Use the Complement Principle**:\n    \n    - The complement of \"strings containing `@` at least once\" is \"strings containing no `@` at all\".\n    - The total number of strings of length 5 is the same as before: Total Strings=1285\\text{Total Strings} = 128^5\n    - The number of strings **without** `@` is: Strings Without ‘@‘=1275\\text{Strings Without `@`} = 127^5\n3. **Step 3: Subtract Complement**:\n    \n    - The number of strings where `@` appears **at least once** is: Strings Containing ‘@‘ at Least Once=1285−1275\\text{Strings Containing `@` at Least Once} = 128^5 - 127^5\n4. **Explanation**:\n    \n    - This calculation accounts for strings where `@` appears in one or more positions by excluding strings where `@` never appears.\n\n---\n\n### **Final Answer for Both Questions**:\n\nFor both questions, the result is the same:\n\n1285−1275128^5 - 127^5\n\n---\n\n### **Detailed Examination Steps**:\n\n1. Clearly state the total number of strings.\n2. Calculate strings without the character of interest.\n3. Use subtraction to find strings with the desired property.\n4. Explicitly mention the complement principle for the second question.\n\nWould you like me to perform numerical calculations for 1285−1275128^5 - 127^5 to provide the exact value?",
+      "styleAttributes": {},
+      "x": 1340,
+      "y": -2988,
+      "width": 700,
+      "height": 525
+    },
+    {
+      "id": "e207d871b637d1fa",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Question 14.png",
+      "styleAttributes": {},
+      "x": -600,
+      "y": -1260,
+      "width": 320,
+      "height": 400
+    },
+    {
+      "id": "f4b1f5ab86984420",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250102005611.png",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 2080,
+      "y": -2756,
+      "width": 400,
+      "height": 318
+    },
+    {
+      "id": "777f3a921a4942fb",
+      "type": "text",
+      "text": "![[Pasted image 20250101232624.png]]",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 1340,
+      "y": -2180,
+      "width": 539,
+      "height": 81
+    },
+    {
+      "id": "616872e3f511e3e2",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250102011018.png",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 2080,
+      "y": -2015,
+      "width": 400,
+      "height": 210
+    },
+    {
+      "id": "8d9a57e98486f908",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250102011041.png",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 2080,
+      "y": -1805,
+      "width": 399,
+      "height": 194
+    },
+    {
+      "id": "168543a023ad2894",
+      "type": "text",
+      "text": "xz+¬xy+¬x¬z",
+      "styleAttributes": {},
+      "x": 1180,
+      "y": -1940,
+      "width": 108,
+      "height": 131
+    },
+    {
+      "id": "c93b689c8723956c",
+      "type": "text",
+      "text": "### **Question**\n\nHow many license plates can be made using three uppercase letters followed by three digits?\n\n---\n\n### **Solution**\n\n#### Step 1: Understand the Structure of the License Plate\n\n- A license plate consists of **three uppercase letters** followed by **three digits**.\n    - **Uppercase Letters**: There are 26 uppercase letters (A to Z).\n    - **Digits**: There are 10 possible digits (0 to 9).\n\n---\n\n#### Step 2: Count the Possibilities for Each Section\n\n1. **Three Uppercase Letters**:\n    \n    - For the first letter, there are 26 choices.\n    - For the second letter, there are also 26 choices.\n    - For the third letter, there are 26 choices.\n    - Since each letter is independent, the total number of combinations for the letters is: 26×26×26=26326 \\times 26 \\times 26 = 26^3\n2. **Three Digits**:\n    \n    - For the first digit, there are 10 choices.\n    - For the second digit, there are 10 choices.\n    - For the third digit, there are 10 choices.\n    - Since each digit is independent, the total number of combinations for the digits is: 10×10×10=10310 \\times 10 \\times 10 = 10^3\n\n---\n\n#### Step 3: Combine the Results\n\n- The letters and digits are independent of each other, so the total number of possible license plates is: Total Plates=263×103\\text{Total Plates} = 26^3 \\times 10^3\n\n---\n\n#### Step 4: Calculate the Total Number\n\n1. Calculate 26326^3:\n    \n    26×26×26=17,57626 \\times 26 \\times 26 = 17,576\n2. Calculate 10310^3:\n    \n    10×10×10=1,00010 \\times 10 \\times 10 = 1,000\n3. Multiply the results:\n    \n    17,576×1,000=17,576,00017,576 \\times 1,000 = 17,576,000\n\n---\n\n### **Final Answer**\n\nThe total number of license plates that can be made is:\n\n17,576,000\\boxed{17,576,000}\n\n---\n\n### **Steps for Exams**:\n\n1. **Break Down the Problem**:\n    - Explain the structure of the license plate (letters and digits).\n2. **Count Possibilities for Each Section**:\n    - Show calculations for both letters and digits separately.\n3. **Combine Using Multiplication**:\n    - Explain independence of sections and multiply results.\n4. **Show Calculations Clearly**:\n    - Calculate powers and final multiplication explicitly.\n5. **Write the Final Answer in a Box**:\n    - Emphasize clarity and accuracy.",
+      "styleAttributes": {},
+      "x": 1340,
+      "y": -2068,
+      "width": 700,
+      "height": 525
+    },
+    {
+      "id": "0798bf31e4ffd34e",
+      "type": "text",
+      "text": "![[Pasted image 20250101232624.png]]",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": -20,
+      "y": -3100,
+      "width": 539,
+      "height": 81
+    },
+    {
+      "id": "4cb9818efc340337",
+      "type": "text",
+      "text": "# Simplifying Expression Using Quine-McCluskey Method\n\n## 1. Convert to Binary Representation\nThe given expression `xyz + xy¬z + ¬xyz + ¬xy¬z` translates to the following binary values:\n\n- `xyz`: **111**\n- `xy¬z`: **110**\n- `¬xyz`: **011**\n- `¬xy¬z`: **010**\n\n---\n\n## 2. Group by Number of 1s\nGroup the minterms based on the count of `1`s in their binary representation:\n\n- **Group 0 (No 1s):** None\n- **Group 1 (One 1):** `010` (¬xy¬z)\n- **Group 2 (Two 1s):** `011` (¬xyz), `110` (xy¬z)\n- **Group 3 (Three 1s):** `111` (xyz)\n\n---\n\n## 3. Compare and Combine Adjacent Groups\nCombine adjacent groups by replacing differing bits with a dash (`-`):\n\n- **From Group 1 and Group 2:**\n  - `010` (¬xy¬z) and `011` (¬xyz) → `01-` (¬xy)\n  - `010` (¬xy¬z) and `110` (xy¬z) → `-10` (y¬z)\n- **From Group 2 and Group 3:**\n  - `011` (¬xyz) and `111` (xyz) → `-11` (yz)\n  - `110` (xy¬z) and `111` (xyz) → `11-` (xy)\n\n---\n\n## 4. Create the Prime Implicant Chart\nThe **prime implicants** are the terms that couldn't be combined further:  \n`¬xy`, `y¬z`, `yz`, and `xy`.\n\n| **Prime Implicant** | **xyz** | **xy¬z** | **¬xyz** | **¬xy¬z** |\n|----------------------|---------|----------|----------|-----------|\n| ¬xy (01-)           |         |          | ✓        | ✓         |\n| y¬z (-10)           |         | ✓        |          | ✓         |\n| yz (-11)            | ✓       |          | ✓        |           |\n| xy (11-)            | ✓       | ✓        |          |           |\n\n---\n\n## 5. Essential Prime Implicants\nThe **essential prime implicants** are those that cover minterms not covered by any other implicant:\n\n- `¬xy` covers `¬xy¬z`.\n- `y¬z` covers `xy¬z`.\n- `yz` covers `¬xyz`.\n- `xy` covers `xyz`.\n\n---\n\n## 6. Simplified Expression\nCombine the essential prime implicants:\n\n\\[ \\{Simplified Expression: } ¬xy + y¬z + yz + xy \\]\n\n### Further Simplification:\nUsing Boolean algebra:\n\n1. Group terms:  \n   \\[ ¬xy + xy + yz + y¬z \\]\n2. Simplify:  \n   \\[ y(¬x + x) + y(z + ¬z) \\]\n3. Result:  \n   \\[ y \\]\n\n---\n## Final Result:\nThe most simplified expression is:  \n\\[y\\]\n\n---\n### Notes:\n- The Quine-McCluskey method systematically simplifies expressions but doesn't always produce the most minimal form. A final check with Boolean algebra is recommended for further reduction.\n",
+      "styleAttributes": {},
+      "x": -20,
+      "y": -2988,
+      "width": 700,
+      "height": 525
+    },
+    {
+      "id": "35d27d22f4fe5331",
+      "type": "text",
+      "text": "![[Pasted image 20250102000028.png]]",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": -20,
+      "y": -2407,
+      "width": 539,
+      "height": 65
+    },
+    {
+      "id": "802bc52b254dfcd8",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250101234209.png",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 720,
+      "y": -2988,
+      "width": 400,
+      "height": 302
+    },
+    {
+      "id": "2197799b3db16641",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250101234300.png",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 720,
+      "y": -2686,
+      "width": 400,
+      "height": 223
+    },
+    {
+      "id": "c5f243a06b4bbba9",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250102003254.png",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 720,
+      "y": -1316,
+      "width": 400,
+      "height": 312
+    },
+    {
+      "id": "88ede95d1b32578b",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250102003250.png",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 720,
+      "y": -1608,
+      "width": 400,
+      "height": 292
+    },
+    {
+      "id": "e6b89c161249f21e",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250102001328.png",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 740,
+      "y": -2073,
+      "width": 400,
+      "height": 288
+    },
+    {
+      "id": "d3c0735b13193632",
+      "type": "text",
+      "text": "# Simplifying Expression Using Quine-McCluskey Method\n\n## 1. Convert to Binary Representation\nThe given expression `xyz + xy¬z + ¬xyz + ¬xy¬z` translates to the following binary values:\n\n- `xyz`: **111**\n- `xy¬z`: **110**\n- `¬xyz`: **011**\n- `¬xy¬z`: **010**\n\n---\n\n## 2. Group by Number of 1s\nGroup the minterms based on the count of `1`s in their binary representation:\n\n- **Group 0 (No 1s):** None\n- **Group 1 (One 1):** `010` (¬xy¬z)\n- **Group 2 (Two 1s):** `011` (¬xyz), `110` (xy¬z)\n- **Group 3 (Three 1s):** `111` (xyz)\n\n---\n\n## 3. Compare and Combine Adjacent Groups\nCombine adjacent groups by replacing differing bits with a dash (`-`):\n\n- **From Group 1 and Group 2:**\n  - `010` (¬xy¬z) and `011` (¬xyz) → `01-` (¬xy)\n  - `010` (¬xy¬z) and `110` (xy¬z) → `-10` (y¬z)\n- **From Group 2 and Group 3:**\n  - `011` (¬xyz) and `111` (xyz) → `-11` (yz)\n  - `110` (xy¬z) and `111` (xyz) → `11-` (xy)\n\n---\n\n## 4. Create the Prime Implicant Chart\nThe **prime implicants** are the terms that couldn't be combined further:  \n`¬xy`, `y¬z`, `yz`, and `xy`.\n\n| **Prime Implicant** | **xyz** | **xy¬z** | **¬xyz** | **¬xy¬z** |\n|----------------------|---------|----------|----------|-----------|\n| ¬xy (01-)           |         |          | ✓        | ✓         |\n| y¬z (-10)           |         | ✓        |          | ✓         |\n| yz (-11)            | ✓       |          | ✓        |           |\n| xy (11-)            | ✓       | ✓        |          |           |\n\n---\n\n## 5. Essential Prime Implicants\nThe **essential prime implicants** are those that cover minterms not covered by any other implicant:\n\n- `¬xy` covers `¬xy¬z`.\n- `y¬z` covers `xy¬z`.\n- `yz` covers `¬xyz`.\n- `xy` covers `xyz`.\n\n---\n\n## 6. Simplified Expression\nCombine the essential prime implicants:\n\n\\[ \\{Simplified Expression: } ¬xy + y¬z + yz + xy \\]\n\n### Further Simplification:\nUsing Boolean algebra:\n\n1. Group terms:  \n   \\[ ¬xy + xy + yz + y¬z \\]\n2. Simplify:  \n   \\[ y(¬x + x) + y(z + ¬z) \\]\n3. Result:  \n   \\[ y \\]\n\n---\n## Final Result:\nThe most simplified expression is:  \n\\[y\\]\n\n---\n### Notes:\n- The Quine-McCluskey method systematically simplifies expressions but doesn't always produce the most minimal form. A final check with Boolean algebra is recommended for further reduction.\n",
+      "styleAttributes": {
+        "border": null
+      },
+      "x": -20,
+      "y": -2295,
+      "width": 700,
+      "height": 525
+    },
+    {
+      "id": "6cdc9da44432d42d",
+      "type": "text",
+      "text": "# Simplifying Expression Using Quine-McCluskey Method\n\n## 1. Convert to Binary Representation\nThe given expression `xyz + xy¬z + ¬xyz + ¬xy¬z` translates to the following binary values:\n\n- `xyz`: **111**\n- `xy¬z`: **110**\n- `¬xyz`: **011**\n- `¬xy¬z`: **010**\n\n---\n\n## 2. Group by Number of 1s\nGroup the minterms based on the count of `1`s in their binary representation:\n\n- **Group 0 (No 1s):** None\n- **Group 1 (One 1):** `010` (¬xy¬z)\n- **Group 2 (Two 1s):** `011` (¬xyz), `110` (xy¬z)\n- **Group 3 (Three 1s):** `111` (xyz)\n\n---\n\n## 3. Compare and Combine Adjacent Groups\nCombine adjacent groups by replacing differing bits with a dash (`-`):\n\n- **From Group 1 and Group 2:**\n  - `010` (¬xy¬z) and `011` (¬xyz) → `01-` (¬xy)\n  - `010` (¬xy¬z) and `110` (xy¬z) → `-10` (y¬z)\n- **From Group 2 and Group 3:**\n  - `011` (¬xyz) and `111` (xyz) → `-11` (yz)\n  - `110` (xy¬z) and `111` (xyz) → `11-` (xy)\n\n---\n\n## 4. Create the Prime Implicant Chart\nThe **prime implicants** are the terms that couldn't be combined further:  \n`¬xy`, `y¬z`, `yz`, and `xy`.\n\n| **Prime Implicant** | **xyz** | **xy¬z** | **¬xyz** | **¬xy¬z** |\n|----------------------|---------|----------|----------|-----------|\n| ¬xy (01-)           |         |          | ✓        | ✓         |\n| y¬z (-10)           |         | ✓        |          | ✓         |\n| yz (-11)            | ✓       |          | ✓        |           |\n| xy (11-)            | ✓       | ✓        |          |           |\n\n---\n\n## 5. Essential Prime Implicants\nThe **essential prime implicants** are those that cover minterms not covered by any other implicant:\n\n- `¬xy` covers `¬xy¬z`.\n- `y¬z` covers `xy¬z`.\n- `yz` covers `¬xyz`.\n- `xy` covers `xyz`.\n\n---\n\n## 6. Simplified Expression\nCombine the essential prime implicants:\n\n\\[ \\{Simplified Expression: } ¬xy + y¬z + yz + xy \\]\n\n### Further Simplification:\nUsing Boolean algebra:\n\n1. Group terms:  \n   \\[ ¬xy + xy + yz + y¬z \\]\n2. Simplify:  \n   \\[ y(¬x + x) + y(z + ¬z) \\]\n3. Result:  \n   \\[ y \\]\n\n---\n## Final Result:\nThe most simplified expression is:  \n\\[y\\]\n\n---\n### Notes:\n- The Quine-McCluskey method systematically simplifies expressions but doesn't always produce the most minimal form. A final check with Boolean algebra is recommended for further reduction.\n",
+      "styleAttributes": {},
+      "x": -20,
+      "y": -1608,
+      "width": 700,
+      "height": 525
+    },
+    {
+      "id": "b999f0f21c854585",
+      "type": "text",
+      "text": "![[Pasted image 20250102000106.png]]",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": -20,
+      "y": -1720,
+      "width": 539,
+      "height": 81
+    },
+    {
+      "id": "550ffb94e9459c46",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250102014150.png",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 2080,
+      "y": -960,
+      "width": 399,
+      "height": 301
+    },
+    {
+      "id": "d36ba3c8df643040",
+      "type": "text",
+      "text": "![[Pasted image 20250102015846.png]]",
+      "styleAttributes": {},
+      "x": 1340,
+      "y": 40,
+      "width": 840,
+      "height": 120
+    },
+    {
+      "id": "d22ed7aa0fe3c2c8",
+      "type": "text",
+      "text": "### **1. Functions from a Set with 10 Elements to a Set with 2 Elements**\n\nLet’s define two sets:\n\n- Set **A** has **10 elements** (denoted as <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mstyle mathcolor=\"orange\"><mn>10</mn></mstyle></mrow><annotation encoding=\"application/x-tex\">|A| = \\textcolor{orange}{10}</annotation></semantics></math>∣A∣=10).\n- Set **B** has **2 elements** (denoted as <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>B</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mstyle mathcolor=\"orange\"><mn>2</mn></mstyle></mrow><annotation encoding=\"application/x-tex\">|B| = \\textcolor{orange}{2}</annotation></semantics></math>∣B∣=2).\n\nA **function** from set **A** to set **B** assigns each element in **A** to exactly one element in **B**.\n\n#### Breakdown:\n\n- For the first element in **A**, you have **2** choices in **B**.\n- For the second element in **A**, you again have **2** choices in **B**.\n- This process continues for all **10** elements in **A**.\n\nTherefore, the total number of functions is calculated by multiplying the number of choices for each element in **A**:\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mstyle mathcolor=\"orange\"><mn>2</mn></mstyle><mo>×</mo><mstyle mathcolor=\"orange\"><mn>2</mn></mstyle><mo>×</mo><mstyle mathcolor=\"orange\"><mn>2</mn></mstyle><mo>×</mo><mo>⋯</mo><mo>×</mo><mstyle mathcolor=\"orange\"><mn>2</mn></mstyle><mspace width=\"1em\"></mspace><mo stretchy=\"false\">(</mo><mstyle mathcolor=\"orange\"><mn>10</mn></mstyle><mtext>&nbsp;times</mtext><mo stretchy=\"false\">)</mo><mo>=</mo><mstyle mathcolor=\"orange\"><msup><mn>2</mn><mn>10</mn></msup></mstyle><mo>=</mo><mstyle mathcolor=\"orange\"><mn>1024</mn></mstyle></mrow><annotation encoding=\"application/x-tex\">\\textcolor{orange}{2} \\times \\textcolor{orange}{2} \\times \\textcolor{orange}{2} \\times \\dots \\times \\textcolor{orange}{2} \\quad (\\textcolor{orange}{10} \\text{ times}) = \\textcolor{orange}{2^{10}} = \\textcolor{orange}{1024}</annotation></semantics></math>\n#### Final Answer:\n\n- The total number of functions from a set with **10** elements to a set with **2** elements is **1024**.\n\n* * *\n\n### **2. Functions from a Set with 10 Elements to a Set with 3 Elements**\n\nNow, let’s consider two sets:\n\n- Set **A** has **10 elements** (denoted as <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mstyle mathcolor=\"orange\"><mn>10</mn></mstyle></mrow><annotation encoding=\"application/x-tex\">|A| = \\textcolor{orange}{10}</annotation></semantics></math>∣A∣=10).\n- Set **C** has **3 elements** (denoted as <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>C</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mstyle mathcolor=\"orange\"><mn>3</mn></mstyle></mrow><annotation encoding=\"application/x-tex\">|C| = \\textcolor{orange}{3}</annotation></semantics></math>∣C∣=3).\n\nA **function** from set **A** to set **C** assigns each element in **A** to exactly one element in **C**.\n\n#### Breakdown:\n\n- For each of the **10** elements in **A**, you have **3** choices in **C**.\n\nSo, the total number of functions is:\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mstyle mathcolor=\"orange\"><mn>3</mn></mstyle><mo>×</mo><mstyle mathcolor=\"orange\"><mn>3</mn></mstyle><mo>×</mo><mstyle mathcolor=\"orange\"><mn>3</mn></mstyle><mo>×</mo><mo>⋯</mo><mo>×</mo><mstyle mathcolor=\"orange\"><mn>3</mn></mstyle><mspace width=\"1em\"></mspace><mo stretchy=\"false\">(</mo><mstyle mathcolor=\"orange\"><mn>10</mn></mstyle><mtext>&nbsp;times</mtext><mo stretchy=\"false\">)</mo><mo>=</mo><mstyle mathcolor=\"orange\"><msup><mn>3</mn><mn>10</mn></msup></mstyle><mo>=</mo><mstyle mathcolor=\"orange\"><mn>59049</mn></mstyle></mrow><annotation encoding=\"application/x-tex\">\\textcolor{orange}{3} \\times \\textcolor{orange}{3} \\times \\textcolor{orange}{3} \\times \\dots \\times \\textcolor{orange}{3} \\quad (\\textcolor{orange}{10} \\text{ times}) = \\textcolor{orange}{3^{10}} = \\textcolor{orange}{59049}</annotation></semantics></math>3×3×3×⋯×3(10 times)=310=59049\n#### Final Answer:\n\n- The total number of functions from a set with **10** elements to a set with **3** elements is **59049**.\n\n* * *\n\n### **Summary of Results:**\n\n- **Number of functions** from a set with **10** elements to a set with **2** elements: **1024**\n- **Number of functions** from a set with **10** elements to a set with **3** elements: **59049**\n\n* * *\n\nThis version uses **orange** for the numbers, making them stand out more clearly. The breakdown should now be more readable and easier to follow.",
+      "styleAttributes": {},
+      "x": 1340,
+      "y": 200,
+      "width": 700,
+      "height": 720
+    },
+    {
+      "id": "93cb281e9a7390cc",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250102014204.png",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 2080,
+      "y": -659,
+      "width": 400,
+      "height": 351
+    },
+    {
+      "id": "91b17e9660fe653c",
+      "type": "text",
+      "text": "![[Pasted image 20250102013334.png]]",
+      "styleAttributes": {},
+      "x": 1320,
+      "y": -1260,
+      "width": 820,
+      "height": 260
+    },
+    {
+      "id": "0a1246e78f6a6e3d",
+      "type": "text",
+      "text": "# Number of Strings of Eight Uppercase English Letters\n\n### a) If letters can be repeated:\n- **Total possibilities per letter**: 26\n- **Number of strings** = <span style=\"color: #FF6347;\">26^8</span>\n\n### b) If no letter can be repeated:\n- **Total possibilities per letter**: 26, 25, 24, ..., down to 19\n- **Number of strings** = <span style=\"color: #FF6347;\">26 × 25 × 24 × ... × 19</span>\n\n### c) That start with X, if letters can be repeated:\n- **Fixed first letter** = 1 (X)\n- **Remaining 7 letters** = 26 choices each\n- **Number of strings** = <span style=\"color: #FF6347;\">26^7</span>\n\n### d) That start with X, if no letter can be repeated:\n- **Fixed first letter** = 1 (X)\n- **Remaining 7 letters** = 25, 24, ..., down to 19\n- **Number of strings** = <span style=\"color: #FF6347;\">25 × 24 × ... × 19</span>\n\n### e) That start and end with X, if letters can be repeated:\n- **Fixed first and last letter** = 1 (X) each\n- **Remaining 6 letters** = 26 choices each\n- **Number of strings** = <span style=\"color: #FF6347;\">26^6</span>\n\n### f) That start with the letters BO (in that order), if letters can be repeated:\n- **Fixed first and second letter** = 1 (B) and 1 (O)\n- **Remaining 6 letters** = 26 choices each\n- **Number of strings** = <span style=\"color: #FF6347;\">26^6</span>\n\n### g) That start and end with the letters BO (in that order), if letters can be repeated:\n- **Fixed first and last letters** = 1 (B) and 1 (O)\n- **Remaining 6 letters** = 26 choices each\n- **Number of strings** = <span style=\"color: #FF6347;\">26^6</span>\n\n### h) That start or end with the letters BO (in that order), if letters can be repeated:\n- **Start with BO** or **End with BO**: Use the inclusion-exclusion principle\n- **Total number of strings** = <span style=\"color: #FF6347;\">(26^6) + (26^6) - (26^5)</span>\n",
+      "styleAttributes": {},
+      "x": 1340,
+      "y": -960,
+      "width": 700,
+      "height": 652
+    },
+    {
+      "id": "a228834550c0403c",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250102001325.png",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 740,
+      "y": -2295,
+      "width": 400,
+      "height": 222
+    }
+  ],
+  "edges": [
+    {
+      "id": "70a44c1053e198a5",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "fromNode": "389c532cbf272e0f",
+      "fromSide": "right",
+      "toNode": "77caf8fe195dea37",
+      "toSide": "left",
+      "color": "4",
+      "label": "Q1"
+    },
+    {
+      "id": "7e2360d408a48519",
+      "styleAttributes": {
+        "path": null,
+        "pathfindingMethod": "square"
+      },
+      "fromNode": "389c532cbf272e0f",
+      "fromSide": "right",
+      "toNode": "ad99db87b36c493a",
+      "toSide": "left",
+      "color": "2"
+    },
+    {
+      "id": "32497d3297d1f8a4",
+      "styleAttributes": {
+        "pathfindingMethod": "square",
+        "path": "dotted"
+      },
+      "fromNode": "389c532cbf272e0f",
+      "fromSide": "right",
+      "toNode": "6bbb0fdebdf530cf",
+      "toSide": "left",
+      "color": "1",
+      "label": "Q3"
+    },
+    {
+      "id": "a1b6d9992fd0fdb2",
+      "styleAttributes": {},
+      "fromNode": "ea3456092ef83ec1",
+      "fromSide": "right",
+      "toNode": "389c532cbf272e0f",
+      "toSide": "left"
+    },
+    {
+      "id": "0350b24eea9e293c",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "fromNode": "389c532cbf272e0f",
+      "fromSide": "right",
+      "toNode": "779702d403ac7b2f",
+      "toSide": "left"
+    },
+    {
+      "id": "5146bb62428a08bf",
+      "styleAttributes": {
+        "pathfindingMethod": "square"
+      },
+      "fromNode": "389c532cbf272e0f",
+      "fromSide": "right",
+      "toNode": "48cefdb7f3765113",
+      "toSide": "left"
+    }
+  ],
+  "metadata": {}
+}

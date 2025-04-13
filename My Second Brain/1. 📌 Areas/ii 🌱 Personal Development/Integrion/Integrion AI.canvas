@@ -1,0 +1,380 @@
+{
+  "nodes": [
+    {
+      "id": "aff2545111c1f257",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -1320,
+      "y": 960,
+      "width": 1820,
+      "height": 1700,
+      "color": "6",
+      "label": "Queries for tree-sitter"
+    },
+    {
+      "id": "d3eb6805c03f237b",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 1460,
+      "y": -380,
+      "width": 1820,
+      "height": 1220,
+      "color": "1",
+      "label": "Research"
+    },
+    {
+      "id": "e1be14d3821f5a10",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 800,
+      "y": -380,
+      "width": 606,
+      "height": 1220,
+      "color": "1",
+      "label": "Research"
+    },
+    {
+      "id": "12596237acbed14c",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -1100,
+      "y": 200,
+      "width": 1140,
+      "height": 640,
+      "color": "5",
+      "label": "Datasets"
+    },
+    {
+      "id": "ef0206cb8604c6bb",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 746,
+      "y": 960,
+      "width": 794,
+      "height": 580,
+      "color": "1",
+      "label": "Tasks"
+    },
+    {
+      "id": "a0abffe560f691c7",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 746,
+      "y": 1640,
+      "width": 606,
+      "height": 460,
+      "color": "1",
+      "label": "Experiments"
+    },
+    {
+      "id": "6b5610ec3d321aac",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 140,
+      "y": -380,
+      "width": 606,
+      "height": 433,
+      "color": "1",
+      "label": "IDEAS"
+    },
+    {
+      "id": "f80151d4b461d733",
+      "type": "link",
+      "url": "https://www.wp1.en-us.nina.az/API_testing.html",
+      "styleAttributes": {},
+      "x": -1820,
+      "y": 200,
+      "width": 500,
+      "height": 420
+    },
+    {
+      "id": "e42ec2e7514739c8",
+      "type": "text",
+      "text": "**A Comprehensive API Testing Dataset:** This dataset could include a vast collection of API requests, responses, and performance metrics. It would be diverse, containing various API types, error codes, and response times. This would be valuable for training your anomaly detection model and generating insights into API behavior.",
+      "styleAttributes": {},
+      "x": -1080,
+      "y": 220,
+      "width": 440,
+      "height": 260
+    },
+    {
+      "id": "81dc7b727968bd1b",
+      "type": "text",
+      "text": "\n- **A Simulated User Behavior Dataset:** This dataset could simulate user interactions with a web application, including login attempts, page visits, and form submissions. It would be beneficial for training your AI/ML module to identify patterns, anomalies, and potential security threats.",
+      "styleAttributes": {},
+      "x": -1080,
+      "y": 540,
+      "width": 440,
+      "height": 220
+    },
+    {
+      "id": "717cb4bc66f87f40",
+      "type": "text",
+      "text": "- **A Real-world Database Logs Dataset:** This dataset could comprise logs from various databases, capturing different types of queries, transactions, and error logs. It would simulate real-world database operations, providing a rich dataset for anomaly detection and performance analysis.  ",
+      "styleAttributes": {},
+      "x": -480,
+      "y": 220,
+      "width": 440,
+      "height": 260
+    },
+    {
+      "id": "0f8902f5d71009a4",
+      "type": "text",
+      "text": "# Javascript",
+      "styleAttributes": {},
+      "x": -1260,
+      "y": 1540,
+      "width": 270,
+      "height": 60
+    },
+    {
+      "id": "1fdef545c4c0b60f",
+      "type": "text",
+      "text": "# Typescript",
+      "styleAttributes": {},
+      "x": -1260,
+      "y": 980,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "572fc29615eb81d8",
+      "type": "text",
+      "text": "# highlights.scm\n\n; Types\n\n(type_identifier) @type\n(predefined_type) @type.builtin\n\n((identifier) @type\n (#match? @type \"^[A-Z]\"))\n\n(type_arguments\n  \"<\" @punctuation.bracket\n  \">\" @punctuation.bracket)\n\n; Variables\n\n(required_parameter (identifier) @variable.parameter)\n(optional_parameter (identifier) @variable.parameter)\n\n; Keywords\n\n[ \"abstract\"\n  \"declare\"\n  \"enum\"\n  \"export\"\n  \"implements\"\n  \"interface\"\n  \"keyof\"\n  \"namespace\"\n  \"private\"\n  \"protected\"\n  \"public\"\n  \"type\"\n  \"readonly\"\n  \"override\"\n  \"satisfies\"\n] @keyword\n# tags.scm\n\n(function_signature\n  name: (identifier) @name) @definition.function\n\n(method_signature\n  name: (property_identifier) @name) @definition.method\n\n(abstract_method_signature\n  name: (property_identifier) @name) @definition.method\n\n(abstract_class_declaration\n  name: (type_identifier) @name) @definition.class\n\n(module\n  name: (identifier) @name) @definition.module\n\n(interface_declaration\n  name: (type_identifier) @name) @definition.interface\n\n(type_annotation\n  (type_identifier) @name) @reference.type\n\n(new_expression\n  constructor: (identifier) @name) @reference.class",
+      "styleAttributes": {},
+      "x": -1260,
+      "y": 1060,
+      "width": 539,
+      "height": 421
+    },
+    {
+      "id": "9f5e9d3682312e56",
+      "type": "text",
+      "text": "# highlights.scm\n\n(\n  (comment)* @doc\n  .\n  (method_definition\n    name: (property_identifier) @name) @definition.method\n  (#not-eq? @name \"constructor\")\n  (#strip! @doc \"^[\\\\s\\\\*/]+|^[\\\\s\\\\*/]$\")\n  (#select-adjacent! @doc @definition.method)\n)\n\n(\n  (comment)* @doc\n  .\n  [\n    (class\n      name: (_) @name)\n    (class_declaration\n      name: (_) @name)\n  ] @definition.class\n  (#strip! @doc \"^[\\\\s\\\\*/]+|^[\\\\s\\\\*/]$\")\n  (#select-adjacent! @doc @definition.class)\n)\n\n(\n  (comment)* @doc\n  .\n  [\n    (function_expression\n      name: (identifier) @name)\n    (function_declaration\n      name: (identifier) @name)\n    (generator_function\n      name: (identifier) @name)\n    (generator_function_declaration\n      name: (identifier) @name)\n  ] @definition.function\n  (#strip! @doc \"^[\\\\s\\\\*/]+|^[\\\\s\\\\*/]$\")\n  (#select-adjacent! @doc @definition.function)\n)\n\n(\n  (comment)* @doc\n  .\n  (lexical_declaration\n    (variable_declarator\n      name: (identifier) @name\n      value: [(arrow_function) (function_expression)]) @definition.function)\n  (#strip! @doc \"^[\\\\s\\\\*/]+|^[\\\\s\\\\*/]$\")\n  (#select-adjacent! @doc @definition.function)\n)\n\n(\n  (comment)* @doc\n  .\n  (variable_declaration\n    (variable_declarator\n      name: (identifier) @name\n      value: [(arrow_function) (function_expression)]) @definition.function)\n  (#strip! @doc \"^[\\\\s\\\\*/]+|^[\\\\s\\\\*/]$\")\n  (#select-adjacent! @doc @definition.function)\n)\n\n(assignment_expression\n  left: [\n    (identifier) @name\n    (member_expression\n      property: (property_identifier) @name)\n  ]\n  right: [(arrow_function) (function_expression)]\n) @definition.function\n\n(pair\n  key: (property_identifier) @name\n  value: [(arrow_function) (function_expression)]) @definition.function\n\n(\n  (call_expression\n    function: (identifier) @name) @reference.call\n  (#not-match? @name \"^(require)$\")\n)\n\n(call_expression\n  function: (member_expression\n    property: (property_identifier) @name)\n  arguments: (_) @reference.call)\n\n(new_expression\n  constructor: (_) @name) @reference.class\n\n(export_statement value: (assignment_expression left: (identifier) @name right: ([\n (number)\n (string)\n (identifier)\n (undefined)\n (null)\n (new_expression)\n (binary_expression)\n (call_expression)\n]))) @definition.constant\n# tags.scm\n; Variables\n;----------\n\n(identifier) @variable\n\n; Properties\n;-----------\n\n(property_identifier) @property\n\n; Function and method definitions\n;--------------------------------\n\n(function_expression\n  name: (identifier) @function)\n(function_declaration\n  name: (identifier) @function)\n(method_definition\n  name: (property_identifier) @function.method)\n\n(pair\n  key: (property_identifier) @function.method\n  value: [(function_expression) (arrow_function)])\n\n(assignment_expression\n  left: (member_expression\n    property: (property_identifier) @function.method)\n  right: [(function_expression) (arrow_function)])\n\n(variable_declarator\n  name: (identifier) @function\n  value: [(function_expression) (arrow_function)])\n\n(assignment_expression\n  left: (identifier) @function\n  right: [(function_expression) (arrow_function)])\n\n; Function and method calls\n;--------------------------\n\n(call_expression\n  function: (identifier) @function)\n\n(call_expression\n  function: (member_expression\n    property: (property_identifier) @function.method))\n\n; Special identifiers\n;--------------------\n\n((identifier) @constructor\n (#match? @constructor \"^[A-Z]\"))\n\n([\n    (identifier)\n    (shorthand_property_identifier)\n    (shorthand_property_identifier_pattern)\n ] @constant\n (#match? @constant \"^[A-Z_][A-Z\\\\d_]+$\"))\n\n((identifier) @variable.builtin\n (#match? @variable.builtin \"^(arguments|module|console|window|document)$\")\n (#is-not? local))\n\n((identifier) @function.builtin\n (#eq? @function.builtin \"require\")\n (#is-not? local))\n\n; Literals\n;---------\n\n(this) @variable.builtin\n(super) @variable.builtin\n\n[\n  (true)\n  (false)\n  (null)\n  (undefined)\n] @constant.builtin\n\n(comment) @comment\n\n[\n  (string)\n  (template_string)\n] @string\n\n(regex) @string.special\n(number) @number\n\n; Tokens\n;-------\n\n[\n  \";\"\n  (optional_chain)\n  \".\"\n  \",\"\n] @punctuation.delimiter\n\n[\n  \"-\"\n  \"--\"\n  \"-=\"\n  \"+\"\n  \"++\"\n  \"+=\"\n  \"*\"\n  \"*=\"\n  \"**\"\n  \"**=\"\n  \"/\"\n  \"/=\"\n  \"%\"\n  \"%=\"\n  \"<\"\n  \"<=\"\n  \"<<\"\n  \"<<=\"\n  \"=\"\n  \"==\"\n  \"===\"\n  \"!\"\n  \"!=\"\n  \"!==\"\n  \"=>\"\n  \">\"\n  \">=\"\n  \">>\"\n  \">>=\"\n  \">>>\"\n  \">>>=\"\n  \"~\"\n  \"^\"\n  \"&\"\n  \"|\"\n  \"^=\"\n  \"&=\"\n  \"|=\"\n  \"&&\"\n  \"||\"\n  \"??\"\n  \"&&=\"\n  \"||=\"\n  \"??=\"\n] @operator\n\n[\n  \"(\"\n  \")\"\n  \"[\"\n  \"]\"\n  \"{\"\n  \"}\"\n]  @punctuation.bracket\n\n(template_substitution\n  \"${\" @punctuation.special\n  \"}\" @punctuation.special) @embedded\n\n[\n  \"as\"\n  \"async\"\n  \"await\"\n  \"break\"\n  \"case\"\n  \"catch\"\n  \"class\"\n  \"const\"\n  \"continue\"\n  \"debugger\"\n  \"default\"\n  \"delete\"\n  \"do\"\n  \"else\"\n  \"export\"\n  \"extends\"\n  \"finally\"\n  \"for\"\n  \"from\"\n  \"function\"\n  \"get\"\n  \"if\"\n  \"import\"\n  \"in\"\n  \"instanceof\"\n  \"let\"\n  \"new\"\n  \"of\"\n  \"return\"\n  \"set\"\n  \"static\"\n  \"switch\"\n  \"target\"\n  \"throw\"\n  \"try\"\n  \"typeof\"\n  \"var\"\n  \"void\"\n  \"while\"\n  \"with\"\n  \"yield\"\n] @keyword",
+      "styleAttributes": {},
+      "x": -1260,
+      "y": 1620,
+      "width": 539,
+      "height": 421
+    },
+    {
+      "id": "005e736adf5297e0",
+      "type": "text",
+      "text": "# highlights.scm\n; Identifiers\n\n(type_identifier) @type\n(primitive_type) @type.builtin\n(field_identifier) @property\n\n; Identifier conventions\n\n; Assume all-caps names are constants\n((identifier) @constant\n (#match? @constant \"^[A-Z][A-Z\\\\d_]+$'\"))\n\n; Assume uppercase names are enum constructors\n((identifier) @constructor\n (#match? @constructor \"^[A-Z]\"))\n\n; Assume that uppercase names in paths are types\n((scoped_identifier\n  path: (identifier) @type)\n (#match? @type \"^[A-Z]\"))\n((scoped_identifier\n  path: (scoped_identifier\n    name: (identifier) @type))\n (#match? @type \"^[A-Z]\"))\n((scoped_type_identifier\n  path: (identifier) @type)\n (#match? @type \"^[A-Z]\"))\n((scoped_type_identifier\n  path: (scoped_identifier\n    name: (identifier) @type))\n (#match? @type \"^[A-Z]\"))\n\n; Assume all qualified names in struct patterns are enum constructors. (They're\n; either that, or struct names; highlighting both as constructors seems to be\n; the less glaring choice of error, visually.)\n(struct_pattern\n  type: (scoped_type_identifier\n    name: (type_identifier) @constructor))\n\n; Function calls\n\n(call_expression\n  function: (identifier) @function)\n(call_expression\n  function: (field_expression\n    field: (field_identifier) @function.method))\n(call_expression\n  function: (scoped_identifier\n    \"::\"\n    name: (identifier) @function))\n\n(generic_function\n  function: (identifier) @function)\n(generic_function\n  function: (scoped_identifier\n    name: (identifier) @function))\n(generic_function\n  function: (field_expression\n    field: (field_identifier) @function.method))\n\n(macro_invocation\n  macro: (identifier) @function.macro\n  \"!\" @function.macro)\n\n; Function definitions\n\n(function_item (identifier) @function)\n(function_signature_item (identifier) @function)\n\n(line_comment) @comment\n(block_comment) @comment\n\n(line_comment (doc_comment)) @comment.documentation\n(block_comment (doc_comment)) @comment.documentation\n\n\"(\" @punctuation.bracket\n\")\" @punctuation.bracket\n\"[\" @punctuation.bracket\n\"]\" @punctuation.bracket\n\"{\" @punctuation.bracket\n\"}\" @punctuation.bracket\n\n(type_arguments\n  \"<\" @punctuation.bracket\n  \">\" @punctuation.bracket)\n(type_parameters\n  \"<\" @punctuation.bracket\n  \">\" @punctuation.bracket)\n\n\"::\" @punctuation.delimiter\n\":\" @punctuation.delimiter\n\".\" @punctuation.delimiter\n\",\" @punctuation.delimiter\n\";\" @punctuation.delimiter\n\n(parameter (identifier) @variable.parameter)\n\n(lifetime (identifier) @label)\n\n\"as\" @keyword\n\"async\" @keyword\n\"await\" @keyword\n\"break\" @keyword\n\"const\" @keyword\n\"continue\" @keyword\n\"default\" @keyword\n\"dyn\" @keyword\n\"else\" @keyword\n\"enum\" @keyword\n\"extern\" @keyword\n\"fn\" @keyword\n\"for\" @keyword\n\"gen\" @keyword\n\"if\" @keyword\n\"impl\" @keyword\n\"in\" @keyword\n\"let\" @keyword\n\"loop\" @keyword\n\"macro_rules!\" @keyword\n\"match\" @keyword\n\"mod\" @keyword\n\"move\" @keyword\n\"pub\" @keyword\n\"raw\" @keyword\n\"ref\" @keyword\n\"return\" @keyword\n\"static\" @keyword\n\"struct\" @keyword\n\"trait\" @keyword\n\"type\" @keyword\n\"union\" @keyword\n\"unsafe\" @keyword\n\"use\" @keyword\n\"where\" @keyword\n\"while\" @keyword\n\"yield\" @keyword\n(crate) @keyword\n(mutable_specifier) @keyword\n(use_list (self) @keyword)\n(scoped_use_list (self) @keyword)\n(scoped_identifier (self) @keyword)\n(super) @keyword\n\n(self) @variable.builtin\n\n(char_literal) @string\n(string_literal) @string\n(raw_string_literal) @string\n\n(boolean_literal) @constant.builtin\n(integer_literal) @constant.builtin\n(float_literal) @constant.builtin\n\n(escape_sequence) @escape\n\n(attribute_item) @attribute\n(inner_attribute_item) @attribute\n\n\"*\" @operator\n\"&\" @operator\n\"'\" @operator\n# tags.scm\n; ADT definitions\n\n(struct_item\n    name: (type_identifier) @name) @definition.class\n\n(enum_item\n    name: (type_identifier) @name) @definition.class\n\n(union_item\n    name: (type_identifier) @name) @definition.class\n\n; type aliases\n\n(type_item\n    name: (type_identifier) @name) @definition.class\n\n; method definitions\n\n(declaration_list\n    (function_item\n        name: (identifier) @name) @definition.method)\n\n; function definitions\n\n(function_item\n    name: (identifier) @name) @definition.function\n\n; trait definitions\n(trait_item\n    name: (type_identifier) @name) @definition.interface\n\n; module definitions\n(mod_item\n    name: (identifier) @name) @definition.module\n\n; macro definitions\n\n(macro_definition\n    name: (identifier) @name) @definition.macro\n\n; references\n\n(call_expression\n    function: (identifier) @name) @reference.call\n\n(call_expression\n    function: (field_expression\n        field: (field_identifier) @name)) @reference.call\n\n(macro_invocation\n    macro: (identifier) @name) @reference.call\n\n; implementations\n\n(impl_item\n    trait: (type_identifier) @name) @reference.implementation\n\n(impl_item\n    type: (type_identifier) @name\n    !trait) @reference.implementation",
+      "styleAttributes": {},
+      "x": -1260,
+      "y": 2180,
+      "width": 539,
+      "height": 421
+    },
+    {
+      "id": "519bdaa65fa65012",
+      "type": "text",
+      "text": "# rust",
+      "styleAttributes": {},
+      "x": -101,
+      "y": 1540,
+      "width": 270,
+      "height": 60
+    },
+    {
+      "id": "51cd228a040ca784",
+      "type": "text",
+      "text": "# highlights.scm\n\n; Identifiers\n\n(type_identifier) @type\n(primitive_type) @type.builtin\n(field_identifier) @property\n\n; Identifier conventions\n\n; Assume all-caps names are constants\n((identifier) @constant\n (#match? @constant \"^[A-Z][A-Z\\\\d_]+$'\"))\n\n; Assume uppercase names are enum constructors\n((identifier) @constructor\n (#match? @constructor \"^[A-Z]\"))\n\n; Assume that uppercase names in paths are types\n((scoped_identifier\n  path: (identifier) @type)\n (#match? @type \"^[A-Z]\"))\n((scoped_identifier\n  path: (scoped_identifier\n    name: (identifier) @type))\n (#match? @type \"^[A-Z]\"))\n((scoped_type_identifier\n  path: (identifier) @type)\n (#match? @type \"^[A-Z]\"))\n((scoped_type_identifier\n  path: (scoped_identifier\n    name: (identifier) @type))\n (#match? @type \"^[A-Z]\"))\n\n; Assume all qualified names in struct patterns are enum constructors. (They're\n; either that, or struct names; highlighting both as constructors seems to be\n; the less glaring choice of error, visually.)\n(struct_pattern\n  type: (scoped_type_identifier\n    name: (type_identifier) @constructor))\n\n; Function calls\n\n(call_expression\n  function: (identifier) @function)\n(call_expression\n  function: (field_expression\n    field: (field_identifier) @function.method))\n(call_expression\n  function: (scoped_identifier\n    \"::\"\n    name: (identifier) @function))\n\n(generic_function\n  function: (identifier) @function)\n(generic_function\n  function: (scoped_identifier\n    name: (identifier) @function))\n(generic_function\n  function: (field_expression\n    field: (field_identifier) @function.method))\n\n(macro_invocation\n  macro: (identifier) @function.macro\n  \"!\" @function.macro)\n\n; Function definitions\n\n(function_item (identifier) @function)\n(function_signature_item (identifier) @function)\n\n(line_comment) @comment\n(block_comment) @comment\n\n(line_comment (doc_comment)) @comment.documentation\n(block_comment (doc_comment)) @comment.documentation\n\n\"(\" @punctuation.bracket\n\")\" @punctuation.bracket\n\"[\" @punctuation.bracket\n\"]\" @punctuation.bracket\n\"{\" @punctuation.bracket\n\"}\" @punctuation.bracket\n\n(type_arguments\n  \"<\" @punctuation.bracket\n  \">\" @punctuation.bracket)\n(type_parameters\n  \"<\" @punctuation.bracket\n  \">\" @punctuation.bracket)\n\n\"::\" @punctuation.delimiter\n\":\" @punctuation.delimiter\n\".\" @punctuation.delimiter\n\",\" @punctuation.delimiter\n\";\" @punctuation.delimiter\n\n(parameter (identifier) @variable.parameter)\n\n(lifetime (identifier) @label)\n\n\"as\" @keyword\n\"async\" @keyword\n\"await\" @keyword\n\"break\" @keyword\n\"const\" @keyword\n\"continue\" @keyword\n\"default\" @keyword\n\"dyn\" @keyword\n\"else\" @keyword\n\"enum\" @keyword\n\"extern\" @keyword\n\"fn\" @keyword\n\"for\" @keyword\n\"gen\" @keyword\n\"if\" @keyword\n\"impl\" @keyword\n\"in\" @keyword\n\"let\" @keyword\n\"loop\" @keyword\n\"macro_rules!\" @keyword\n\"match\" @keyword\n\"mod\" @keyword\n\"move\" @keyword\n\"pub\" @keyword\n\"raw\" @keyword\n\"ref\" @keyword\n\"return\" @keyword\n\"static\" @keyword\n\"struct\" @keyword\n\"trait\" @keyword\n\"type\" @keyword\n\"union\" @keyword\n\"unsafe\" @keyword\n\"use\" @keyword\n\"where\" @keyword\n\"while\" @keyword\n\"yield\" @keyword\n(crate) @keyword\n(mutable_specifier) @keyword\n(use_list (self) @keyword)\n(scoped_use_list (self) @keyword)\n(scoped_identifier (self) @keyword)\n(super) @keyword\n\n(self) @variable.builtin\n\n(char_literal) @string\n(string_literal) @string\n(raw_string_literal) @string\n\n(boolean_literal) @constant.builtin\n(integer_literal) @constant.builtin\n(float_literal) @constant.builtin\n\n(escape_sequence) @escape\n\n(attribute_item) @attribute\n(inner_attribute_item) @attribute\n\n\"*\" @operator\n\"&\" @operator\n\"'\" @operator\n# tags.scm\n; ADT definitions\n\n(struct_item\n    name: (type_identifier) @name) @definition.class\n\n(enum_item\n    name: (type_identifier) @name) @definition.class\n\n(union_item\n    name: (type_identifier) @name) @definition.class\n\n; type aliases\n\n(type_item\n    name: (type_identifier) @name) @definition.class\n\n; method definitions\n\n(declaration_list\n    (function_item\n        name: (identifier) @name) @definition.method)\n\n; function definitions\n\n(function_item\n    name: (identifier) @name) @definition.function\n\n; trait definitions\n(trait_item\n    name: (type_identifier) @name) @definition.interface\n\n; module definitions\n(mod_item\n    name: (identifier) @name) @definition.module\n\n; macro definitions\n\n(macro_definition\n    name: (identifier) @name) @definition.macro\n\n; references\n\n(call_expression\n    function: (identifier) @name) @reference.call\n\n(call_expression\n    function: (field_expression\n        field: (field_identifier) @name)) @reference.call\n\n(macro_invocation\n    macro: (identifier) @name) @reference.call\n\n; implementations\n\n(impl_item\n    trait: (type_identifier) @name) @reference.implementation\n\n(impl_item\n    type: (type_identifier) @name\n    !trait) @reference.implementation",
+      "styleAttributes": {},
+      "x": -101,
+      "y": 1620,
+      "width": 539,
+      "height": 421
+    },
+    {
+      "id": "4e7e6e56080f0ac0",
+      "type": "text",
+      "text": "# C#",
+      "styleAttributes": {},
+      "x": -101,
+      "y": 980,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "ace2c1d47e582214",
+      "type": "text",
+      "text": "# highlights.scm\n\n(class_declaration name: (identifier) @name) @definition.class\n\n(class_declaration (base_list (_) @name)) @reference.class\n\n(interface_declaration name: (identifier) @name) @definition.interface\n\n(interface_declaration (base_list (_) @name)) @reference.interface\n\n(method_declaration name: (identifier) @name) @definition.method\n\n(object_creation_expression type: (identifier) @name) @reference.class\n\n(type_parameter_constraints_clause (identifier) @name) @reference.class\n\n(type_parameter_constraint (type type: (identifier) @name)) @reference.class\n\n(variable_declaration type: (identifier) @name) @reference.class\n\n(invocation_expression function: (member_access_expression name: (identifier) @name)) @reference.send\n\n(namespace_declaration name: (identifier) @name) @definition.module\n\n(namespace_declaration name: (identifier) @name) @module\n\n# tags.scm\n(class_declaration name: (identifier) @name) @definition.class\n\n(class_declaration (base_list (_) @name)) @reference.class\n\n(interface_declaration name: (identifier) @name) @definition.interface\n\n(interface_declaration (base_list (_) @name)) @reference.interface\n\n(method_declaration name: (identifier) @name) @definition.method\n\n(object_creation_expression type: (identifier) @name) @reference.class\n\n(type_parameter_constraints_clause (identifier) @name) @reference.class\n\n(type_parameter_constraint (type type: (identifier) @name)) @reference.class\n\n(variable_declaration type: (identifier) @name) @reference.class\n\n(invocation_expression function: (member_access_expression name: (identifier) @name)) @reference.send\n\n(namespace_declaration name: (identifier) @name) @definition.module\n\n(namespace_declaration name: (identifier) @name) @module",
+      "styleAttributes": {},
+      "x": -101,
+      "y": 1060,
+      "width": 539,
+      "height": 421
+    },
+    {
+      "id": "599e18be6d3b9555",
+      "type": "text",
+      "text": "# AI Team\nQuestions\nHow are we sending the unit test to the backend it json or ...\n\n- Currently connecting with #Github  #Gitlab and #Bitbucket\n\n# Task 1\n## Improve this code to take in the ==access token \n  - From the backend side \n  - ![[Pasted image 20250406104142.png]]![[Pasted image 20250406103624.png]]\n- \n- Something like this ![[Pasted image 20250406103802.png]]\n\n# Task 2\n## Write functions for all of this. So that we can easily access the repositories\n\n## Main Question \n### How do we work with this\n![[Pasted image 20250406105549.png]]\n",
+      "styleAttributes": {},
+      "x": 760,
+      "y": 980,
+      "width": 760,
+      "height": 540
+    },
+    {
+      "id": "63a3a96c8f29bd04",
+      "type": "text",
+      "text": "# Java",
+      "styleAttributes": {},
+      "x": -1260,
+      "y": 2100,
+      "width": 270,
+      "height": 60
+    },
+    {
+      "id": "4bf50162d480ed5e",
+      "type": "text",
+      "text": "# Python",
+      "styleAttributes": {},
+      "x": -680,
+      "y": 980,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "4a12b37b666df83a",
+      "type": "text",
+      "text": "## Other testing tools",
+      "styleAttributes": {},
+      "x": 917,
+      "y": -440,
+      "width": 342,
+      "height": 60,
+      "color": "2"
+    },
+    {
+      "id": "152d3112829b6970",
+      "type": "text",
+      "text": "# Tools",
+      "styleAttributes": {},
+      "x": 1500,
+      "y": -360,
+      "width": 160,
+      "height": 60
+    },
+    {
+      "id": "3888562b0d7b5ae2",
+      "type": "text",
+      "text": "## 1.  ast-grep\n## 2. Dossier (TypeScript and Python)\n## 3. ",
+      "styleAttributes": {},
+      "x": 1500,
+      "y": -280,
+      "width": 660,
+      "height": 446
+    },
+    {
+      "id": "64133135851dddb8",
+      "type": "text",
+      "text": "# highlights.scm\n\n(module (expression_statement (assignment left: (identifier) @name) @definition.constant))\n\n(class_definition\n  name: (identifier) @name) @definition.class\n\n(function_definition\n  name: (identifier) @name) @definition.function\n\n(call\n  function: [\n      (identifier) @name\n      (attribute\n        attribute: (identifier) @name)\n  ]) @reference.call\n\n\n# tags.scm\n\n(module (expression_statement (assignment left: (identifier) @name) @definition.constant))\n\n(class_definition\n  name: (identifier) @name) @definition.class\n\n(function_definition\n  name: (identifier) @name) @definition.function\n\n(call\n  function: [\n      (identifier) @name\n      (attribute\n        attribute: (identifier) @name)\n  ]) @reference.call",
+      "styleAttributes": {},
+      "x": -680,
+      "y": 1060,
+      "width": 539,
+      "height": 421
+    },
+    {
+      "id": "d5d94156a4ca6a9b",
+      "type": "link",
+      "url": "https://docs.google.com/document/d/1B1-IGRqfrfJisyv8G3aR7fGlwsr6gCufLI0Q1QR05D8/edit?tab=t.0",
+      "styleAttributes": {},
+      "x": -580,
+      "y": -360,
+      "width": 500,
+      "height": 420
+    },
+    {
+      "id": "4ef5f5db184c99b9",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250320072641.png",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 820,
+      "y": -320,
+      "width": 536,
+      "height": 140
+    },
+    {
+      "id": "c69b5a58c5e01c09",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250320072942.png",
+      "styleAttributes": {
+        "border": "invisible"
+      },
+      "x": 820,
+      "y": -160,
+      "width": 536,
+      "height": 301
+    },
+    {
+      "id": "cfd1bfaf37d9b51b",
+      "type": "text",
+      "text": "# go",
+      "styleAttributes": {},
+      "x": -680,
+      "y": 1540,
+      "width": 270,
+      "height": 60
+    },
+    {
+      "id": "8ba153b851a772cd",
+      "type": "text",
+      "text": "# highlights.scm\n; Function calls\n\n(call_expression\n  function: (identifier) @function)\n\n(call_expression\n  function: (identifier) @function.builtin\n  (#match? @function.builtin \"^(append|cap|close|complex|copy|delete|imag|len|make|new|panic|print|println|real|recover)$\"))\n\n(call_expression\n  function: (selector_expression\n    field: (field_identifier) @function.method))\n\n; Function definitions\n\n(function_declaration\n  name: (identifier) @function)\n\n(method_declaration\n  name: (field_identifier) @function.method)\n\n; Identifiers\n\n(type_identifier) @type\n(field_identifier) @property\n(identifier) @variable\n\n; Operators\n\n[\n  \"--\"\n  \"-\"\n  \"-=\"\n  \":=\"\n  \"!\"\n  \"!=\"\n  \"...\"\n  \"*\"\n  \"*\"\n  \"*=\"\n  \"/\"\n  \"/=\"\n  \"&\"\n  \"&&\"\n  \"&=\"\n  \"%\"\n  \"%=\"\n  \"^\"\n  \"^=\"\n  \"+\"\n  \"++\"\n  \"+=\"\n  \"<-\"\n  \"<\"\n  \"<<\"\n  \"<<=\"\n  \"<=\"\n  \"=\"\n  \"==\"\n  \">\"\n  \">=\"\n  \">>\"\n  \">>=\"\n  \"|\"\n  \"|=\"\n  \"||\"\n  \"~\"\n] @operator\n\n; Keywords\n\n[\n  \"break\"\n  \"case\"\n  \"chan\"\n  \"const\"\n  \"continue\"\n  \"default\"\n  \"defer\"\n  \"else\"\n  \"fallthrough\"\n  \"for\"\n  \"func\"\n  \"go\"\n  \"goto\"\n  \"if\"\n  \"import\"\n  \"interface\"\n  \"map\"\n  \"package\"\n  \"range\"\n  \"return\"\n  \"select\"\n  \"struct\"\n  \"switch\"\n  \"type\"\n  \"var\"\n] @keyword\n\n; Literals\n\n[\n  (interpreted_string_literal)\n  (raw_string_literal)\n  (rune_literal)\n] @string\n\n(escape_sequence) @escape\n\n[\n  (int_literal)\n  (float_literal)\n  (imaginary_literal)\n] @number\n\n[\n  (true)\n  (false)\n  (nil)\n  (iota)\n] @constant.builtin\n\n(comment) @comment\n# tags.scm\n(\n  (comment)* @doc\n  .\n  (function_declaration\n    name: (identifier) @name) @definition.function\n  (#strip! @doc \"^//\\\\s*\")\n  (#set-adjacent! @doc @definition.function)\n)\n\n(\n  (comment)* @doc\n  .\n  (method_declaration\n    name: (field_identifier) @name) @definition.method\n  (#strip! @doc \"^//\\\\s*\")\n  (#set-adjacent! @doc @definition.method)\n)\n\n(call_expression\n  function: [\n    (identifier) @name\n    (parenthesized_expression (identifier) @name)\n    (selector_expression field: (field_identifier) @name)\n    (parenthesized_expression (selector_expression field: (field_identifier) @name))\n  ]) @reference.call\n\n(type_spec\n  name: (type_identifier) @name) @definition.type\n\n(type_identifier) @name @reference.type\n\n(package_clause \"package\" (package_identifier) @name)\n\n(type_declaration (type_spec name: (type_identifier) @name type: (interface_type)))\n\n(type_declaration (type_spec name: (type_identifier) @name type: (struct_type)))\n\n(import_declaration (import_spec) @name)\n\n(var_declaration (var_spec name: (identifier) @name))\n\n(const_declaration (const_spec name: (identifier) @name))",
+      "styleAttributes": {},
+      "x": -680,
+      "y": 1620,
+      "width": 539,
+      "height": 421
+    },
+    {
+      "id": "f556cd551ed63692",
+      "type": "link",
+      "url": "https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#get-repository-content",
+      "x": 780,
+      "y": 1680,
+      "width": 400,
+      "height": 400
+    }
+  ],
+  "edges": [
+    {
+      "id": "8a749c797cb4fd4c",
+      "styleAttributes": {},
+      "fromNode": "e42ec2e7514739c8",
+      "fromSide": "left",
+      "toNode": "f80151d4b461d733",
+      "toSide": "right"
+    },
+    {
+      "id": "acb2543eb614b8d5",
+      "styleAttributes": {},
+      "fromNode": "4ef5f5db184c99b9",
+      "fromSide": "top",
+      "toNode": "4a12b37b666df83a",
+      "toSide": "bottom"
+    },
+    {
+      "id": "d3e7639cec3a96cd",
+      "styleAttributes": {},
+      "fromNode": "c69b5a58c5e01c09",
+      "fromSide": "top",
+      "toNode": "4a12b37b666df83a",
+      "toSide": "bottom"
+    },
+    {
+      "id": "2eb4cb220ac32ea8",
+      "styleAttributes": {},
+      "fromNode": "f556cd551ed63692",
+      "fromSide": "top",
+      "toNode": "599e18be6d3b9555",
+      "toSide": "bottom"
+    }
+  ],
+  "metadata": {}
+}

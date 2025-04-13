@@ -1,0 +1,49 @@
+{
+  "apiKey": "AIzaSyDF7VjET8zjJDazkNqfxJ0r6fylfzEMaC8",
+  "model": "gemini-pro",
+  "prompts": [
+    {
+      "display": "Format to Markdown (Selection)",
+      "scope": "SELECTION",
+      "model": "gemini-pro",
+      "config": {
+        "topK": 1,
+        "topP": 1,
+        "temperature": 0.9,
+        "outputTokenLimit": 2048,
+        "maxOutputTokens": 400,
+        "inputTokenLimit": 30720
+      },
+      "prompt": "Convert the following text into a Markdown file this is for a note taking app called Obsidian. Use:\n\nEmoji's for visual flair to enhance design).\nHeadings (H1, H2, etc.) to organize the structure.\nCode Blocks to maintain technical formatting andd add font size and font style and colour where appropriate.\nAvoid adding extra descriptions or elaborations—focus on accurately converting the provided text.",
+      "type": "generative"
+    },
+    {
+      "display": "Ask Gemini (Document)",
+      "scope": "DOCUMENT",
+      "model": "gemini-pro",
+      "config": {
+        "topK": 1,
+        "topP": 1,
+        "temperature": 0.9,
+        "outputTokenLimit": 2048,
+        "maxOutputTokens": 400,
+        "inputTokenLimit": 30720
+      },
+      "prompt": "",
+      "type": "generative"
+    }
+  ],
+  "chat": {
+    "model": "gemini-pro",
+    "config": {
+      "topK": 1,
+      "topP": 1,
+      "temperature": 0.9,
+      "outputTokenLimit": 2048,
+      "maxOutputTokens": 400,
+      "inputTokenLimit": 30720
+    },
+    "type": "chat"
+  },
+  "saftyThreshold": "HARM_BLOCK_THRESHOLD_UNSPECIFIED"
+}

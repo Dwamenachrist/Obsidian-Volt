@@ -1,0 +1,109 @@
+{
+	"nodes":[
+		{
+			"id":"b88290b879debfa8",
+			"type":"group",
+			"styleAttributes":{},
+			"x":-580,
+			"y":-300,
+			"width":1045,
+			"height":641,
+			"label":"Task 2 RSA"
+		},
+		{
+			"id":"6f1a38de522b75f2",
+			"type":"group",
+			"styleAttributes":{},
+			"x":-560,
+			"y":-1080,
+			"width":1320,
+			"height":480,
+			"color":"3",
+			"label":"Steps in RSA"
+		},
+		{
+			"id":"259ed5262d602e28",
+			"type":"file",
+			"file":"7. 🏷️ Misc/Assets/RSA-Encryption-and-Decryption-Example-4.webp",
+			"styleAttributes":{"border":"invisible"},
+			"x":-100,
+			"y":-820,
+			"width":400,
+			"height":200
+		},
+		{
+			"id":"42ed077c6e8fa5c1",
+			"type":"file",
+			"file":"7. 🏷️ Misc/Assets/RSA-Encryption-and-Decryption-Example-1 1.webp",
+			"styleAttributes":{"border":"invisible"},
+			"x":-100,
+			"y":-1060,
+			"width":400,
+			"height":200
+		},
+		{
+			"id":"b3d47497ac141ab4",
+			"type":"file",
+			"file":"7. 🏷️ Misc/Assets/RSA-Encryption-and-Decryption-Example-3.webp",
+			"styleAttributes":{"border":"invisible"},
+			"x":-540,
+			"y":-820,
+			"width":400,
+			"height":200
+		},
+		{
+			"id":"39001aafaa353d90",
+			"type":"file",
+			"file":"7. 🏷️ Misc/Assets/RSA-Encryption-and-Decryption-Example-0.webp",
+			"styleAttributes":{"border":"invisible"},
+			"x":-540,
+			"y":-1060,
+			"width":400,
+			"height":200
+		},
+		{
+			"id":"2550039b6898877b",
+			"type":"file",
+			"file":"7. 🏷️ Misc/Assets/RSA-Encryption-and-Decryption-Example-5.webp",
+			"styleAttributes":{"border":"invisible"},
+			"x":340,
+			"y":-820,
+			"width":400,
+			"height":200
+		},
+		{
+			"id":"ab299a0e86501121",
+			"type":"file",
+			"file":"7. 🏷️ Misc/Assets/RSA-Encryption-and-Decryption-Example-2.webp",
+			"styleAttributes":{"border":"invisible"},
+			"x":340,
+			"y":-1060,
+			"width":400,
+			"height":200
+		},
+		{
+			"id":"52c1bd0c7a25c2fd",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":-560,
+			"y":-280,
+			"width":439,
+			"height":325,
+			"color":"1"
+		},
+		{
+			"id":"322fafb264d3640e",
+			"type":"file",
+			"file":"7. 🏷️ Misc/Assets/Pasted image 20250125094414.png",
+			"styleAttributes":{"border":"invisible"},
+			"x":-100,
+			"y":-280,
+			"width":558,
+			"height":334
+		},
+		{"id":"fa05c13e5cf0276a","type":"text","text":"Monte Carlo Simulation ","x":740,"y":-340,"width":250,"height":60}
+	],
+	"edges":[],
+	"metadata":{}
+}

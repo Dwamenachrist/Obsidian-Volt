@@ -1,0 +1,331 @@
+{
+  "nodes": [
+    {
+      "id": "407cf4459674b612",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 220,
+      "y": -300,
+      "width": 1440,
+      "height": 1360,
+      "label": "Types of AI Agents"
+    },
+    {
+      "id": "da6210ffda636ec3",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -520,
+      "y": -300,
+      "width": 670,
+      "height": 526,
+      "label": "Intro"
+    },
+    {
+      "id": "34e40c3acfd28ddd",
+      "type": "text",
+      "text": "Obsidian Note: Tree-sitter for Code Parsing and AST Generation\nProject Goal: To build an AI-powered agent that automatically generates unit tests for code written in various programming languages (C#, Java, Go, Rust, Python).\n\nWhy Tree-sitter?\n\nAccurate Parsing: Tree-sitter provides accurate and reliable parsing of code into Abstract Syntax Trees (ASTs). This is crucial for understanding the code's structure and semantics.\nMulti-language Support: Tree-sitter supports a wide range of programming languages, making it suitable for our project that targets multiple languages.\nSpeed and Efficiency: Tree-sitter is known for its speed and efficiency, which is important for parsing large codebases and integrating with an LLM.\nIncremental Parsing: Tree-sitter can efficiently re-parse code after edits, making it potentially useful for dynamic analysis or interactive code editing tools.\nHow We're Using Tree-sitter\n\nInstallation: We installed the tree-sitter library and the language-specific grammars for C# (tree-sitter-c-sharp), Java (tree-sitter-java), Go (tree-sitter-go), Rust (tree-sitter-rust), and Python (tree-sitter-python).\n\nParser Initialization: We created parser instances for each language using the Language and Parser classes from the tree-sitter library.\n\nCode Parsing: We used the parser.parse() method to parse code snippets in different languages and generate ASTs.\n\nAST Inspection: We inspected the ASTs using the root_node.sexp() method to print the S-expression representation of the tree. This helped us understand the structure of the parsed code.\n\nVisualization: We used the graphviz library to visualize the ASTs, making it easier to understand the code's hierarchical structure and debug any parsing issues.\n\nBenchmarking: We measured the parsing time for each language to evaluate the performance of Tree-sitter.\n\nOutputs and Analysis\n\nS-expressions: We obtained S-expression representations of the ASTs for code snippets in all target languages. These S-expressions accurately captured the structure of the code, including classes, methods, variables, and expressions.\nVisualizations: We generated Graphviz visualizations of the ASTs, providing a clear visual representation of the code's hierarchy.\nPerformance: Tree-sitter demonstrated fast parsing times for all languages, indicating its suitability for our project.\nBenefits\n\nAccurate Code Representation: The ASTs provide a precise and structured representation of the code, which is crucial for the LLM to understand the code's logic and generate meaningful test cases.\nLanguage Flexibility: Tree-sitter's multi-language support allows us to easily extend our agent to handle new languages in the future.\nEfficiency: Tree-sitter's speed and efficiency contribute to the overall performance of our test generation agent.\nNext Steps\n\nLLM Integration: Integrate the generated ASTs with our LLM to guide the generation of unit tests.\nPrompt Engineering: Develop effective prompts for the LLM that leverage the information extracted from the ASTs.\nTest Validation: Implement a mechanism to validate the generated test cases.\nIteration and Refinement: Iteratively refine the LLM prompts and test generation process based on feedback and validation results.\nConclusion\n\nTree-sitter provides a solid foundation for our code parsing and AST generation needs. Its accuracy, multi-language support, and efficiency make it a valuable tool for our project. By effectively integrating Tree-sitter with our LLM, we can create a powerful and versatile AI agent for automated unit test generation.\n\nThis Obsidian note provides a comprehensive summary of your work with Tree-sitter. You can further enhance it by:\n\nAdding code examples: Include snippets of your parsing and visualization code.\nEmbedding visualizations: Embed the generated [LANGUAGE]_syntax_tree.png images directly into the note.\nLinking to resources: Add links to the Tree-sitter documentation and GitHub repository.\nCreating a dedicated \"Next Steps\" section: Expand on the next steps and create sub-sections for each task (LLM integration, prompt engineering, etc.).\nThis structured note will help you and your teammates understand your progress and plan the next stages of your project effectively.",
+      "styleAttributes": {},
+      "x": -2720,
+      "y": -2800,
+      "width": 780,
+      "height": 620
+    },
+    {
+      "id": "fee6002ff63fadcd",
+      "type": "text",
+      "text": "### `arse_code`\n\ncontent_copy \n\n```\ndef parse_code(parser, code):    \"\"\"    Parse the given code using the provided parser and return the syntax tree and root node.    \"\"\"    return parser.parse(bytes(code, \"utf8\"))\n```\n\n[Use code with caution](https://g.co/legal/generative-code)\n\n1. **Purpose:** This function is designed to take source code and a parser as input. It then uses the parser to analyze the code and create a syntax tree, which represents the code's structure.\n2. **Input:**\n    - `parser`: This is an object that knows how to parse a specific programming language (e.g., a Python parser).\n    - `code`: This is the source code you want to analyze, provided as a string.\n3. **Process:**\n    - It converts the `code` string into bytes using UTF-8 encoding.\n    - It calls the `parse` method of the `parser` object, passing in the code bytes. This is where the actual parsing happens.\n4. **Output:** The function returns the result of the parsing, which is typically a syntax tree object (and its root node). This tree represents how the code is structured.",
+      "styleAttributes": {},
+      "x": -1600,
+      "y": -2800,
+      "width": 820,
+      "height": 580
+    },
+    {
+      "id": "69a1cc7975170652",
+      "type": "text",
+      "text": "### `visualize_tree`\n\ncontent_copy \n\n```\ndef visualize_tree(node, code, graph=None, parent_id=None):    \"\"\"    Visualize a Tree-sitter syntax tree using Graphviz.    \"\"\"    if graph is None:        graph = graphviz.Digraph(format=\"png\")    node_id = str(id(node))    graph.node(node_id, f\"{node.type} ({node.start_point}-{node.end_point})\")    if parent_id:        graph.edge(parent_id, node_id)    for child in node.children:        visualize_tree(child, code, graph, node_id)    return graph\n```\n\n[Use code with caution](https://g.co/legal/generative-code)\n\n1. **Purpose:** This function takes a syntax tree (or a part of it) and creates a visual representation of it using the `graphviz` library. This helps you see the structure of the code more clearly.\n2. **Input:**\n    - `node`: The starting node of the syntax tree (or a subtree) to visualize.\n    - `code`: The original source code (likely used for debugging or context).\n    - `graph`: (Optional) An existing `graphviz` graph object to add to. If `None`, a new one is created.\n    - `parent_id`: (Optional) Used internally to track the parent node during the visualization.\n3. **Process:**\n    - It creates a new `graphviz` graph if one isn't provided.\n    - It adds a node to the graph for the current `node`, including its type and location in the code.\n    - If there's a `parent_id`, it draws an edge connecting the current node to its parent.\n    - It recursively calls itself for each child of the current node, building out the visualization.\n4. **Output:** The function returns the `graphviz` graph object, which you can then use to render an image of the tree.",
+      "styleAttributes": {},
+      "x": -1590,
+      "y": -2120,
+      "width": 800,
+      "height": 580
+    },
+    {
+      "id": "c0fb7c64b98016a7",
+      "type": "text",
+      "text": "## Why Convert to Bytes?\n**1. Computers and Text**\n\n- **Bytes are Fundamental:** At the most basic level, computers store and process information as bytes, which are sequences of 8 bits (0s and 1s).\n- **Text is Represented by Numbers:** To represent text, computers use encoding schemes that map characters (letters, numbers, symbols) to specific numerical values. These numerical values are then stored as bytes.\n\n**2. Unicode and UTF-8**\n\n- **Unicode: A Universal Standard:** Unicode is a universal character encoding standard that assigns a unique numerical code point to every character from every language. This ensures that text from different languages can be consistently represented and exchanged.\n- **UTF-8: An Efficient Encoding:** UTF-8 is a variable-length encoding scheme for Unicode. It uses 1 to 4 bytes to represent each character, making it efficient for storing and transmitting text.\n\n**3. Tree-sitter's Input**\n\n- **Bytes as Input:** The `parser.parse()` method in Tree-sitter expects the input code to be in the form of a `bytes` object. This is because Tree-sitter works at a low level with byte sequences to analyze the code's structure.\n- **UTF-8 as the Standard:** Tree-sitter assumes that the input bytes are encoded using UTF-8. This is a common and widely supported encoding, making it a sensible choice for a parsing library.\n\n**4. Why Convert to Bytes?**\n\n- **Consistent Representation:** By converting your code string to bytes using UTF-8 encoding, you ensure that the characters are represented in a way that Tree-sitter understands. This prevents issues with different character encodings that might cause incorrect parsing.\n- **Efficiency:** UTF-8's variable-length encoding can be more efficient for storing and processing code compared to fixed-length encodings.\n\n**In Summary**\n\nConverting your code string to bytes using UTF-8 encoding is necessary to:\n\n- Provide Tree-sitter with the correct input format (`bytes` object).\n- Ensure consistent character representation using a widely supported encoding.\n- Potentially improve efficiency.\n\nBy doing this conversion, you ensure that Tree-sitter can accurately parse your code and generate the correct AST, regardless of the language or characters used in the code.",
+      "styleAttributes": {},
+      "x": -700,
+      "y": -2800,
+      "width": 620,
+      "height": 580,
+      "color": "1"
+    },
+    {
+      "id": "1b7272aa7542bcad",
+      "type": "text",
+      "text": "### `benchmark_parsing`\n\ncontent_copy \n\n```\ndef benchmark_parsing(parser, code, iterations=100):    \"\"\"    Benchmark the parsing time for a given parser and code snippet over a number of iterations.    \"\"\"    start_time = time.time()    for _ in range(iterations):        parser.parse(bytes(code, \"utf8\"))    end_time = time.time()    return (end_time - start_time) / iterations\n```\n\n[Use code with caution](https://g.co/legal/generative-code)\n\n1. **Purpose:** This function measures how long it takes for a parser to process a piece of code. It does this repeatedly to get a more accurate average time.\n2. **Input:**\n    - `parser`: The parser you want to test.\n    - `code`: The code to use for the benchmark.\n    - `iterations`: (Optional, defaults to 100) The number of times to run the parser.\n3. **Process:**\n    - It records the starting time.\n    - It runs the parser on the `code` for the specified number of `iterations`.\n    - It records the ending time.\n4. **Output:** The function returns the average parsing time per iteration, calculated as the total time divided by the number of iterations. This helps you assess the performance of different parsers.",
+      "styleAttributes": {},
+      "x": -1590,
+      "y": -1500,
+      "width": 800,
+      "height": 460
+    },
+    {
+      "id": "d23dce84ac4e683a",
+      "type": "text",
+      "text": "This code snippet is designed to parse and visualize the syntax trees of code written in different programming languages. It also benchmarks the performance of the parsers for each language.\n\nHere's a step-by-step explanation:\n\n1. **Iteration:**\n\ncontent_copy \n\n```\nfor lang, code in code_samples.items():\n```\n\n[Use code with caution](https://g.co/legal/generative-code)\n\n- This line starts a loop that iterates through the `code_samples` dictionary.\n- `code_samples` is a dictionary where keys are programming language names (like \"python\", \"java\", etc.) and values are code snippets written in those languages.\n- In each iteration, `lang` will hold the language name (e.g., \"python\") and `code` will hold the corresponding code snippet.\n\n2. **Parser Selection:**\n\ncontent_copy \n\n```\nif lang == \"c_sharp\":       parser = c_sharp_parser   elif lang == \"java\":       parser = java_parser   # ... (similar checks for other languages)\n```\n\n[Use code with caution](https://g.co/legal/generative-code)\n\n- This block of code uses conditional statements (`if`, `elif`) to select the appropriate parser based on the current `lang` value.\n- For example, if `lang` is \"c_sharp\", it assigns the `c_sharp_parser` to the `parser` variable.\n\n3. **Parsing and Printing:**\n\ncontent_copy \n\n```\nprint(f\"Parsing {lang.upper()} code...\")   tree = parse_code(parser, code)   print(tree.root_node)\n```\n\n[Use code with caution](https://g.co/legal/generative-code)\n\n- It prints a message indicating which language is being parsed.\n- It calls the `parse_code` function, passing the selected `parser` and the `code` snippet. The `parse_code` function likely uses the parser to analyze the code and create a syntax tree representation.\n- The resulting syntax tree is stored in the `tree` variable.\n- It prints the root node of the syntax tree (`tree.root_node`).\n\n4. **Benchmarking:**\n\ncontent_copy \n\n```\nprint(f\"Benchmarking {lang.upper()} parser...\")   avg_time = benchmark_parsing(parser, code)   print(f\"Average parsing time: {avg_time:.6f} seconds\")\n```\n\n[Use code with caution](https://g.co/legal/generative-code)\n\n- It prints a message about benchmarking the parser.\n- It calls the `benchmark_parsing` function to measure the parser's performance, passing the `parser` and `code`. This function likely runs the parsing process multiple times and calculates the average time taken.\n- It prints the average parsing time.\n\n5. **Visualization:**\n\ncontent_copy \n\n```\nprint(f\"Visualizing {lang.upper()} syntax tree...\")   graph = visualize_tree(tree.root_node, code)   graph.render(filename=f\"{lang}_syntax_tree\", cleanup=True)   print(f\"Visualization saved as {lang}_syntax_tree.png\\n\")\n```\n\n[Use code with caution](https://g.co/legal/generative-code)\n\n- It prints a message about visualizing the syntax tree.\n- It calls the `visualize_tree` function to create a visual representation of the syntax tree, using the root node (`tree.root_node`) and the `code`. This function likely uses a library like Graphviz to generate the visualization.\n- It renders the visualization and saves it as a PNG image file named after the language (e.g., \"python_syntax_tree.png\").\n- It prints a message confirming the image file's name.\n\nIn summary, this code snippet iterates through different programming languages, parses code snippets written in those languages, visualizes the generated syntax trees, and benchmarks the performance of the parsers. This is useful for understanding the structure of code in different languages and for comparing the efficiency of different parsing tools.",
+      "styleAttributes": {},
+      "x": -480,
+      "y": -1860,
+      "width": 740,
+      "height": 560
+    },
+    {
+      "id": "fe1099d40be7d553",
+      "type": "text",
+      "text": "  \n  \n\ndef get_ast(code_txt):\n\n  tree = ast.parse(code_txt)\n\n  \n\n  Convert the entire AST tree to a string\n\n  ast_as_string = ast.dump(tree, indent=4)\n\n  \n\n  return ast_as_string",
+      "styleAttributes": {},
+      "x": -2660,
+      "y": 960,
+      "width": 500,
+      "height": 300
+    },
+    {
+      "id": "d3caa3552b4822da",
+      "type": "text",
+      "text": "This function, named `get_ast`, is designed to take Python code as input and return its Abstract Syntax Tree (AST) representation as a string.\n\nHere's a step-by-step explanation:\n\n1. **`def get_ast(code_txt):`**: This line defines a function called `get_ast`. It accepts one argument:\n    \n    - `code_txt`: This is expected to be a string containing the Python code you want to analyze.\n2. **`tree = ast.parse(code_txt)`**: This line is where the core functionality lies.\n    \n    - `ast.parse`: This is a function from the `ast` module (imported earlier). It takes the Python code in `code_txt` and parses it, creating an AST representation of the code's structure.\n    - `tree`: The resulting AST is stored in a variable named `tree`. This `tree` object is a complex data structure that represents the code's elements (functions, classes, variables, etc.) and their relationships.\n3. **`ast_as_string = ast.dump(tree, indent=4)`**: This line converts the AST into a more readable string format.\n    \n    - `ast.dump`: This function from the `ast` module takes the `tree` (AST object) and converts it into a string representation.\n    - `indent=4`: This argument ensures the output string is nicely formatted with an indentation of 4 spaces, making it easier to read.\n    - `ast_as_string`: The resulting string representation of the AST is stored in this variable.\n4. **`return ast_as_string`**: This line simply returns the `ast_as_string` that was created, making it the output of the `get_ast` function.\n    \n\n**In essence, this function takes Python code, transforms it into an AST using `ast.parse`, converts the AST to a readable string with `ast.dump`, and then returns that string.**",
+      "styleAttributes": {},
+      "x": -2040,
+      "y": 980,
+      "width": 740,
+      "height": 580,
+      "color": "2"
+    },
+    {
+      "id": "e8ec829c3ca251ae",
+      "type": "text",
+      "text": "This code snippet is initializing an instance of the `ChatTogether` class from the `langchain_together` library and assigning it to the variable `llm_together`.\n\nHere's a breakdown of what each part means:\n\n1. **`llm_together =`**: This part declares a variable named `llm_together` which will store the instance of the `ChatTogether` class.\n    \n2. **`ChatTogether(...)`**: This is where the `ChatTogether` class is being called to create an instance. Inside the parentheses are the arguments being passed to the class constructor.\n    \n3. **`model=\"meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo\"`**: This argument specifies the large language model (LLM) that `ChatTogether` will use. In this case, it's the \"Meta-Llama-3.1-70B-Instruct-Turbo\" model.\n    \n4. **`temperature=0.1`**: The `temperature` parameter controls the randomness of the model's output. Lower values (like 0.1) make the output more deterministic and focused, while higher values make it more creative and unpredictable.\n    \n5. **`api_key=userdata.get('TOGETHER_API_KEY')`**: This line retrieves the API key required to access the specified LLM. It's getting the key from user data, likely stored in a Google Colab environment, using `userdata.get('TOGETHER_API_KEY')`.\n    \n6. **`streaming=True`**: This argument enables streaming of the LLM's response. This means that the output will be received in chunks as it's generated, rather than waiting for the entire response to be completed before displaying it.\n    \n\n**In summary,** this code is setting up a connection to a specific large language model (`meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo`) using the `ChatTogether` class. It's configured with a low temperature for focused output, retrieves the necessary API key, and enables streaming for real-time response delivery.",
+      "styleAttributes": {},
+      "x": -4440,
+      "y": 620,
+      "width": 920,
+      "height": 780,
+      "color": "2"
+    },
+    {
+      "id": "71ca0eb672de8a6b",
+      "type": "text",
+      "text": "import ast\nfrom gitingest import ingest\nimport nest_asyncio\nfrom pathlib import Path\nimport re\nfrom langchain_groq import ChatGroq\nfrom google.colab import userdata\nfrom pydantic import BaseModel, Field\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.prompts import ChatPromptTemplate\nfrom langchain_together import ChatTogether\nimport re\n\n# from templates import template\n\nnest_asyncio.apply()",
+      "styleAttributes": {},
+      "x": -2240,
+      "y": -120,
+      "width": 600,
+      "height": 480
+    },
+    {
+      "id": "97b1dbe8b9e260ad",
+      "type": "text",
+      "text": "**Model-Based Reflex Agents:** These agents are like detectives, maintaining an internal \"model\" of the world to make decisions. They consider not only their current perception but also their past experiences and knowledge about how the world works. Think of a self-driving car that uses its sensors to perceive its surroundings and its internal map to navigate.\n\nA simple reflex agent is like someone who only reacts to the immediate situation. They see a red light and stop, without considering the surrounding traffic or their destination.\n\nA model-based reflex agent, on the other hand, is like a driver who uses their knowledge of traffic rules, road conditions, and their destination to make informed decisions. They might slow down in anticipation of a yellow light or change lanes to avoid congestion.\n\n**Internal models are crucial for AI agents because they allow them to:**\n\n- **Make better decisions:** By considering past experiences and predicting future states, agents can make more informed choices.\n- **Adapt to changing environments:** As the agent gathers more information, it can update its internal model to reflect the current state of the world.\n- **Plan and execute complex actions:** The model provides a framework for the agent to reason about its goals and devise strategies to achieve them.\n### What is  the internal model in this case?\nIn a similar way, model-based reflex agents create and maintain an \"internal model\" of their environment. This model is like a mental map that helps them understand how the world works and make informed decisions.\n\n**Key components of an internal model:**\n\n- **Representation of the environment:** This could be a simplified version of the real world, capturing essential elements and relationships. For example, a self-driving car might have an internal model of roads, intersections, and traffic lights.\n- **Knowledge about how the environment changes:** The model also includes information about how the environment evolves over time. For instance, the self-driving car's model would incorporate the knowledge that traffic lights change color and cars move along roads.\n- **Predictions about future states:** Based on the current state and its knowledge, the agent can use the model to predict future states of the environment. This allows it to anticipate changes and plan its actions accordingly.\n",
+      "styleAttributes": {},
+      "x": 920,
+      "y": -280,
+      "width": 527,
+      "height": 462
+    },
+    {
+      "id": "fb0ef2b7ad603316",
+      "type": "text",
+      "text": "# Types of #AI-AGENTS\n- **Simple Reflex Agents:** These agents are like chameleons, reacting instantly to changes in their environment. They follow simple rules based on their current perception, without considering past experiences. Think of a thermostat that automatically adjusts the temperature based on the current room temperature.\n- **Model-Based Reflex Agents:** These agents are like detectives, maintaining an internal \"model\" of the world to make decisions. They consider not only their current perception but also their past experiences and knowledge about how the world works. Think of a self-driving car that uses its sensors to perceive its surroundings and its internal map to navigate.\n- **Goal-Based Agents:** These agents are like ambitious entrepreneurs, driven by specific goals. They plan their actions and make decisions to achieve their objectives. Think of a chess-playing AI that strategizes to win the game.\n- **Utility-Based Agents:** These agents are like savvy shoppers, seeking the best outcome or \"utility.\" They not only achieve their goals but also try to do so in the most efficient and rewarding way. Think of a robot vacuum cleaner that cleans the entire room while minimizing energy consumption.\n- **Learning Agents:** These agents are like eager students, constantly learning and improving from their experiences. They adapt their behavior based on feedback and become more intelligent over time. Think of a spam filter that learns to identify junk mail based on user feedback.",
+      "styleAttributes": {},
+      "x": 240,
+      "y": -280,
+      "width": 627,
+      "height": 478
+    },
+    {
+      "id": "2db59554c20fec09",
+      "type": "text",
+      "text": "Introduction\r\n\r\n\r\n\r\nEnchanté is an online store that sells natural and organic skincare. From a “business” perspective, the aim is to promote the brand and drive sales. Their flagship product, Enchantés body butter, embodies the caliber of the ingredients they utilize and the service they offer. To achieve this, they spend a lot of money on social media and influencer marketing to build their customer base and to strategize this is necessary to build the target audience and in the long run, a loyal customer base.\r\n\r\nBut Enchanté had a big problem: with the founder in the business full time, there was no time to spend on consistent and engaging marketing.This refrains them from taking advantage of the power of social media and optimizing their partnership with influencers.\r\n\r\n﻿\r\n\r\nIt delves into how Enchanté can utilize IT solutions to address this issue and automate the customer acquisition process. Social media analytics: By using social media automation tools, data analytics, and targeted marketing strategies, Enchanté can maximize its impact.\r\n\r\n\r\n\r\n\r\n\r\nThis research aims to effectively conduct a deep analysis of the effectiveness of carried out social media marketing and influencer marketing activities of Enchanté. We will identify common weaknesses and make recommendations for how to:\r\n\r\n\r\n\r\nBuild their overall brand awareness and presence\r\n\r\n\r\n\r\nDevelop unique content that appeals to the audience\r\n\r\n\r\n\r\nMaximize engagement and improve client relations\r\n\r\n\r\n\r\nStreamline activities to free time for long-term planning and new product ideation\r\n\r\n\r\n\r\nIn the end, this analysis will help Enchanté determine its current competitive position in the new and upcoming natural skincare market, together with strategic marketing and product growth opportunities.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "styleAttributes": {},
+      "x": 1760,
+      "y": -40,
+      "width": 560,
+      "height": 400
+    },
+    {
+      "id": "97b916b3854a3774",
+      "type": "text",
+      "text": "- `import ast`: Imports the `ast` module, which is used for working with Abstract Syntax Trees (ASTs) in Python. ASTs represent the structure of Python code and are used here for code analysis.\n    \n- `from gitingest import ingest`: Imports the `ingest` function from the `gitingest` library. This library and function are likely used for retrieving code from a Git repository.\n    \n- `import nest_asyncio`: Imports the `nest_asyncio` library, which is often used in environments like Google Colab to enable asynchronous operations within Jupyter notebooks.\n    \n- `from pathlib import Path`: Imports the `Path` class from the `pathlib` library, which provides an object-oriented way to interact with files and directories.\n    \n- `import re`: Imports the `re` module, which provides regular expression operations for pattern matching within text.\n    \n- `from langchain_groq import ChatGroq`: Imports the `ChatGroq` class, possibly from a library related to LangChain, a framework for building language model applications. This class could be used for interacting with a Groq database.\n    \n- `from google.colab import userdata`: Imports `userdata` from `google.colab`, a specific library for Google Colab notebooks. This might be used to access user-specific data or configurations within the Colab environment.\n    \n- `from pydantic import BaseModel, Field`: Imports `BaseModel` and `Field` from `pydantic`, a library for data validation and parsing. These are often used to define data structures with specific types and constraints.\n    \n- `from langchain_core.output_parsers import StrOutputParser`: Imports `StrOutputParser` from `langchain_core.output_parsers`. This suggests that the code uses LangChain and that this specific class is for parsing string outputs from language models.\n    \n- `from langchain_core.prompts import ChatPromptTemplate`: Imports `ChatPromptTemplate` from `langchain_core.prompts`. This class is also related to LangChain and is likely used for creating and managing prompts for interacting with language models.\n    \n- `from langchain_together import ChatTogether`: Imports `ChatTogether` from `langchain_together`. This class might be used for collaborative or multi-agent interactions with language models.\n    \n- `import re`: This line imports the `re` module again, but it's likely redundant as it was already imported earlier in the code.\n    \n- `# from templates import template`: This line is commented out, indicating it's not currently active. If uncommented, it would attempt to import `template` from a file named `templates.py`.\n    \n- `nest_asyncio.apply()`: Calls the `apply()` function from `nest_asyncio`, which is commonly used to patch the event loop in environments like Jupyter notebooks to allow nested asynchronous operations.",
+      "styleAttributes": {},
+      "x": -1480,
+      "y": -41,
+      "width": 920,
+      "height": 801,
+      "color": "2"
+    },
+    {
+      "id": "10da6dbffe09ca08",
+      "type": "link",
+      "url": "https://en.wikipedia.org/wiki/Abstract_syntax_tree",
+      "styleAttributes": {},
+      "x": -3110,
+      "y": -900,
+      "width": 720,
+      "height": 600
+    },
+    {
+      "id": "4fa938f642ab250e",
+      "type": "text",
+      "text": "**Understanding the Differences**\n\n- **`# parsing a string of code`:**\n    \n    - This is the simplest method. You provide the entire source code as a single `bytes` object.\n    - **Pros:** Easy to use, good for smaller code snippets.\n    - **Cons:** Can be inefficient for very large files, as it loads the entire code into memory.\n- **`# parsing a callable by using the byte offset`:**\n    \n    - You provide a function (`read_callable_byte_offset`) that Tree-sitter can call to get chunks of the source code.\n    - Tree-sitter asks for one byte at a time by providing the `byte_offset`.\n    - **Pros:** Memory-efficient for large files, as it reads only the necessary parts of the code.\n    - **Cons:** Can be slightly more complex to set up.\n- **`# parsing a callable by using the point`:**\n    \n    - Similar to the byte offset method, but Tree-sitter provides a `(row, column)` tuple (a \"point\") to your callable function (`read_callable_point`).\n    - **Pros:** Useful when your source code is already organized into lines (e.g., if you're reading from a file line by line).\n    - **Cons:** Might be less efficient if Tree-sitter needs to jump around in the code a lot.",
+      "styleAttributes": {},
+      "x": -1820,
+      "y": -980,
+      "width": 860,
+      "height": 640
+    },
+    {
+      "id": "361e92faed58e583",
+      "type": "text",
+      "text": "llm_together = ChatTogether(\n\n    model=\"meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo\",\n\n    temperature=0.1,\n\n    api_key=userdata.get('TOGETHER_API_KEY'),\n\n    streaming=True)",
+      "styleAttributes": {},
+      "x": -3040,
+      "y": 500,
+      "width": 580,
+      "height": 260
+    },
+    {
+      "id": "a19a209c4374be26",
+      "type": "text",
+      "text": "# Understanding the Essence of AI Agents.\n\n**An #AI-agent is a computer program or system designed to perceive its environment, reason about its observations, and take actions to achieve specific goals.** Think of it as a smart assistant that can act autonomously and make decisions on its own.\n\nHere are some key characteristics of AI agents:\n\n- **Autonomous:** They operate without constant human intervention.\n- **Goal-oriented:** They strive to achieve specific objectives.\n- **Reactive:** They respond to changes in their environment.\n- **Proactive:** They can take the initiative to achieve their goals.\n\n#AI-agents are different from other AI concepts like machine learning models. While machine learning models excel at recognizing patterns and making predictions, AI agents go a step further by using those predictions to make decisions and take action.\n\n**Think of it this way:** A machine learning model might predict the weather, but an AI agent would use that prediction to decide whether to bring an umbrella when it goes out.\n\n**Fun Fact:** The concept of AI agents draws inspiration from the field of **cognitive science**, which studies the human mind and its processes.",
+      "styleAttributes": {},
+      "x": -500,
+      "y": -280,
+      "width": 627,
+      "height": 478
+    }
+  ],
+  "edges": [
+    {
+      "id": "e717b2d16e2f8fe8",
+      "styleAttributes": {},
+      "fromNode": "71ca0eb672de8a6b",
+      "fromSide": "right",
+      "toNode": "97b916b3854a3774",
+      "toSide": "left"
+    },
+    {
+      "id": "68c329c034d8c639",
+      "styleAttributes": {},
+      "fromNode": "71ca0eb672de8a6b",
+      "fromSide": "bottom",
+      "toNode": "361e92faed58e583",
+      "toSide": "top"
+    },
+    {
+      "id": "874878e588d05e66",
+      "styleAttributes": {},
+      "fromNode": "361e92faed58e583",
+      "fromSide": "left",
+      "toNode": "e8ec829c3ca251ae",
+      "toSide": "right"
+    },
+    {
+      "id": "049f3d7448d7fca6",
+      "styleAttributes": {},
+      "fromNode": "361e92faed58e583",
+      "fromSide": "bottom",
+      "toNode": "fe1099d40be7d553",
+      "toSide": "top"
+    },
+    {
+      "id": "7f4d62ed16172d82",
+      "styleAttributes": {},
+      "fromNode": "fe1099d40be7d553",
+      "fromSide": "right",
+      "toNode": "d3caa3552b4822da",
+      "toSide": "left"
+    },
+    {
+      "id": "9f595c0e83145b8c",
+      "styleAttributes": {},
+      "fromNode": "10da6dbffe09ca08",
+      "fromSide": "right",
+      "toNode": "71ca0eb672de8a6b",
+      "toSide": "top"
+    },
+    {
+      "id": "9f62eedf20fe3309",
+      "styleAttributes": {},
+      "fromNode": "10da6dbffe09ca08",
+      "fromSide": "right",
+      "toNode": "4fa938f642ab250e",
+      "toSide": "left"
+    },
+    {
+      "id": "06b579a5ca1d5b1d",
+      "styleAttributes": {},
+      "fromNode": "71ca0eb672de8a6b",
+      "fromSide": "top",
+      "toNode": "34e40c3acfd28ddd",
+      "toSide": "bottom"
+    },
+    {
+      "id": "70e488158dcba7c7",
+      "styleAttributes": {},
+      "fromNode": "34e40c3acfd28ddd",
+      "fromSide": "right",
+      "toNode": "fee6002ff63fadcd",
+      "toSide": "left"
+    },
+    {
+      "id": "1dc10b1150c8643e",
+      "styleAttributes": {},
+      "fromNode": "fee6002ff63fadcd",
+      "fromSide": "bottom",
+      "toNode": "69a1cc7975170652",
+      "toSide": "top"
+    },
+    {
+      "id": "50a92b9569853655",
+      "styleAttributes": {},
+      "fromNode": "fee6002ff63fadcd",
+      "fromSide": "right",
+      "toNode": "c0fb7c64b98016a7",
+      "toSide": "left"
+    },
+    {
+      "id": "6f5964d59855f2a8",
+      "styleAttributes": {},
+      "fromNode": "69a1cc7975170652",
+      "fromSide": "bottom",
+      "toNode": "1b7272aa7542bcad",
+      "toSide": "top"
+    },
+    {
+      "id": "c72f89361121e214",
+      "styleAttributes": {},
+      "fromNode": "1b7272aa7542bcad",
+      "fromSide": "right",
+      "toNode": "d23dce84ac4e683a",
+      "toSide": "left"
+    },
+    {
+      "id": "a94d24022a75f3f8",
+      "styleAttributes": {},
+      "fromNode": "fee6002ff63fadcd",
+      "fromSide": "right",
+      "toNode": "d23dce84ac4e683a",
+      "toSide": "left"
+    },
+    {
+      "id": "905569f03345727a",
+      "styleAttributes": {},
+      "fromNode": "69a1cc7975170652",
+      "fromSide": "right",
+      "toNode": "d23dce84ac4e683a",
+      "toSide": "left"
+    }
+  ],
+  "metadata": {}
+}
