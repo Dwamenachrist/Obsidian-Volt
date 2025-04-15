@@ -8,7 +8,8 @@
   "smart_notices": {
     "muted": {
       "no_entity": true,
-      "Notice_muted": true
+      "Notice_muted": true,
+      "Mobile_detected__to_prevent_performance_issues__click_to_load_Smart_Environment_when_ready_": true
     }
   },
   "system_prompts_folder": "smart prompts",
