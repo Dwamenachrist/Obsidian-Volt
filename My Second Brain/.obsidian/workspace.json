@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5. 📅 Daily Notes/🔆 15-04-2025.md",
+                "file": "🔆 19-03-2025 CS.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "🔆 15-04-2025"
+              "title": "🔆 19-03-2025 CS"
             }
           }
         ]
@@ -182,13 +182,27 @@
       "obisidian-note-linker:Note Linker": false,
       "templater-obsidian:Templater": false,
       "yet-another-obsidian-synchronizer:YAOS": false,
-      "github-sync:Sync with Remote": false
+      "github-sync:Sync with Remote": false,
+      "smart-connections:Open: View Smart Connections": false,
+      "smart-connections:Open: Smart Chat Conversation": false
     }
   },
   "active": "450c73b86a5b3296",
   "lastOpenFiles": [
-    "5. 📅 Daily Notes/🔆 14-04-2025.md",
+    "🔆 19-01-2025.md",
+    "🔆 18-02-2025.md",
+    "🔆 12-02-2025.md",
+    "🔆 11-01-2025.md",
+    "🔆 23-01-2025.md",
+    "🔆 19-03-2025 CS.md",
+    "🔆 09-02-2025.md",
+    "🔆 08-01-2025.md",
+    "🔆 06-01-2025.md",
+    "🔆 03-01-2025.md",
+    "🔆 02-01-2025.md",
+    "🔆 29-01-2025.md",
     "5. 📅 Daily Notes/🔆 15-04-2025.md",
+    "5. 📅 Daily Notes/🔆 14-04-2025.md",
     "1. 📌 Areas/🙏 Bible Study/Prayers.md",
     "5. 📅 Daily Notes/🔆 13-04-2025.md",
     "1. 📌 Areas/ii 🌱 Personal Development/El Cuidado/Untitled.md",
@@ -209,19 +223,7 @@
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/2nd Semester/Resources/DSA/DSA cheatsheet.pdf",
     "5. 📅 Daily Notes/🔆 31-03-2025.md",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/2nd Semester/Resources/DSA",
-    "5. 📅 Daily Notes/🔆 30-03-2025.md",
-    "5. 📅 Daily Notes/🔆 29-03-2025.md",
-    "5. 📅 Daily Notes/🔆 28-03-2025.md",
-    "1. 📌 Areas/ii 🌱 Personal Development/Telecel Internship/Reload.md",
     "1. 📌 Areas/ii 🌱 Personal Development/TechCrush BootCamp/Final Project Development.canvas",
-    "5. 📅 Daily Notes/🔆 26-03-2025.md",
-    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Key note from Slides/04 Network Layer Protocols and IP addressing.md",
-    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Key note from Slides/03 Huawei VRP.md",
-    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Key note from Slides/02 Network Reference Model.md",
-    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/Key note from Slides/05 IP ROUTING BASICS.md",
-    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/HCIA-Datacom VI .O Mock Exam Emmanuel 2 Trial 1.md",
-    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/HCIA-Datacom VI .O Mock Exam Christian 2 Trial.md",
-    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/HCIA-Datacom VI .O Mock Exam Kubra.md",
     "7. 🏷️ Misc/Assets/Pasted image 20250326100552.png",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/⚡Problem Set 3 (conflict 2025-02-03-15-47-26).canvas",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/⚡Problem Set 3 (conflict 2025-02-01-11-01-37).canvas",
