@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. 📌 Areas/🙏 Bible Study/Prayers.md",
+                "file": "5. 📅 Daily Notes/🔆 15-04-2025.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Prayers"
+              "title": "🔆 15-04-2025"
             }
           }
         ]
@@ -182,15 +182,15 @@
       "obisidian-note-linker:Note Linker": false,
       "templater-obsidian:Templater": false,
       "yet-another-obsidian-synchronizer:YAOS": false,
-      "smart-connections:Open: View Smart Connections": false,
-      "smart-connections:Open: Smart Chat Conversation": false,
       "github-sync:Sync with Remote": false
     }
   },
   "active": "450c73b86a5b3296",
   "lastOpenFiles": [
-    "5. 📅 Daily Notes/🔆 13-04-2025.md",
+    "5. 📅 Daily Notes/🔆 14-04-2025.md",
+    "5. 📅 Daily Notes/🔆 15-04-2025.md",
     "1. 📌 Areas/🙏 Bible Study/Prayers.md",
+    "5. 📅 Daily Notes/🔆 13-04-2025.md",
     "1. 📌 Areas/ii 🌱 Personal Development/El Cuidado/Untitled.md",
     "1. 📌 Areas/ii 🌱 Personal Development/El Cuidado/UI.canvas",
     "5. 📅 Daily Notes/🔆 12-04-2025.md",
@@ -222,8 +222,6 @@
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/HCIA-Datacom VI .O Mock Exam Emmanuel 2 Trial 1.md",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/HCIA-Datacom VI .O Mock Exam Christian 2 Trial.md",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/HCIA-Datacom VI .O Mock Exam Kubra.md",
-    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/HClA-Datacom VI .O Mock Exam Christian.md",
-    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Computer Networks/HClA-Datacom VI .O Mock  Exam Albert.md",
     "7. 🏷️ Misc/Assets/Pasted image 20250326100552.png",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/⚡Problem Set 3 (conflict 2025-02-03-15-47-26).canvas",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/⚡Problem Set 3 (conflict 2025-02-01-11-01-37).canvas",
