@@ -335,7 +335,9 @@
       "command-palette:Open command palette": false,
       "gemini-assistant:New Gemini chat": false,
       "remotely-save:Remotely Save": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "smart-connections:Open: View Smart Connections": false,
+      "smart-connections:Open: Smart Chat Conversation": false
     }
   },
   "active": "5fbd1acfd81d5f2b",
