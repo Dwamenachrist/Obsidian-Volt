@@ -335,12 +335,10 @@
       "command-palette:Open command palette": false,
       "gemini-assistant:New Gemini chat": false,
       "remotely-save:Remotely Save": false,
-      "templater-obsidian:Templater": false,
-      "smart-connections:Open: View Smart Connections": false,
-      "smart-connections:Open: Smart Chat Conversation": false
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "17d8a564ad6ef6c6",
+  "active": "5fbd1acfd81d5f2b",
   "lastOpenFiles": [
     "5. 📅 Daily Notes/🔆 16-04-2025.md",
     "1. 📌 Areas/ii 🌱 Personal Development/Termux",
