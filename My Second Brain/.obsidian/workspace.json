@@ -11,24 +11,17 @@
             "id": "450c73b86a5b3296",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "5. 📅 Daily Notes/🔆 18-04-2025.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
+                "file": "1. 📌 Areas/ii 🌱 Personal Development/El Cuidado/UI.canvas",
+                "viewState": {
+                  "x": 4012.540478992291,
+                  "y": 233.1342520888895,
+                  "zoom": -2.1608601103076013
                 }
               },
-              "icon": "lucide-file",
-              "title": "🔆 18-04-2025"
+              "icon": "lucide-layout-dashboard",
+              "title": "UI"
             }
           }
         ]
@@ -189,8 +182,10 @@
   },
   "active": "450c73b86a5b3296",
   "lastOpenFiles": [
-    "5. 📅 Daily Notes/🔆 17-04-2025.md",
+    "1. 📌 Areas/ii 🌱 Personal Development/El Cuidado/Untitled.md",
+    "5. 📅 Daily Notes/🔆 19-04-2025.md",
     "5. 📅 Daily Notes/🔆 18-04-2025.md",
+    "5. 📅 Daily Notes/🔆 17-04-2025.md",
     "5. 📅 Daily Notes/🔆 16-04-2025.md",
     "5. 📅 Daily Notes/🔆 15-04-2025.md",
     "🔆 19-03-2025 CV for software engineering.md",
@@ -208,7 +203,6 @@
     "5. 📅 Daily Notes/🔆 14-04-2025.md",
     "1. 📌 Areas/🙏 Bible Study/Prayers.md",
     "5. 📅 Daily Notes/🔆 13-04-2025.md",
-    "1. 📌 Areas/ii 🌱 Personal Development/El Cuidado/Untitled.md",
     "1. 📌 Areas/ii 🌱 Personal Development/El Cuidado/UI.canvas",
     "5. 📅 Daily Notes/🔆 12-04-2025.md",
     "5. 📅 Daily Notes/🔆 08-04-2025.md",
@@ -220,7 +214,6 @@
     "7. 🏷️ Misc/Assets/Pasted image 20250406104142.png",
     "7. 🏷️ Misc/Assets/Pasted image 20250406103802.png",
     "7. 🏷️ Misc/Assets/Pasted image 20250406103624.png",
-    "5. 📅 Daily Notes/🔆 04-04-2025.md",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/2nd Semester/Resources/DSA/DSA cheatsheet.pdf",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/2nd Semester/Resources/DSA",
     "1. 📌 Areas/ii 🌱 Personal Development/TechCrush BootCamp/Final Project Development.canvas",
