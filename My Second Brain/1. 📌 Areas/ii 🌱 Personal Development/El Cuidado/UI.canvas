@@ -45,24 +45,14 @@
       "label": "Helpers"
     },
     {
-      "id": "b0c9f5f1911681a5",
-      "type": "text",
-      "text": "# About Doctor",
+      "id": "3f8e21ed75dfa737",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250317164427.png",
       "styleAttributes": {},
-      "x": -1240,
-      "y": 2120,
-      "width": 260,
-      "height": 60
-    },
-    {
-      "id": "c463f38c99516df5",
-      "type": "text",
-      "text": "# Chat Page for Patient ",
-      "styleAttributes": {},
-      "x": -80,
-      "y": 2140,
-      "width": 360,
-      "height": 60
+      "x": 1230,
+      "y": -1032,
+      "width": 946,
+      "height": 496
     },
     {
       "id": "228aa65d3d08bff5",
@@ -115,46 +105,6 @@
       "height": 720
     },
     {
-      "id": "f4ad1ca451d1af8b",
-      "type": "text",
-      "text": "# Patient Dashboard",
-      "styleAttributes": {},
-      "x": -1360,
-      "y": -360,
-      "width": 340,
-      "height": 80
-    },
-    {
-      "id": "8fa12d6d6646665d",
-      "type": "text",
-      "text": "-- Provider Skills table\nCREATE TABLE provider_skills (\n  id SERIAL PRIMARY KEY,\n  provider_id UUID REFERENCES healthcare_providers(id),\n  skill_name TEXT NOT NULL,\n  skill_value INTEGER NOT NULL\n);\n\n-- Medical History table\nCREATE TABLE medical_history (\n  id SERIAL PRIMARY KEY,\n  patient_id UUID REFERENCES patients(id),\n  condition TEXT NOT NULL,\n  diagnosis_date DATE,\n  medication_name TEXT NOT NULL,\n  dosage TEXT,\n  frequency TEXT,\n  start_date DATE,\n  end_date DATE,\n  prescribing_doctor TEXT,\n  notes TEXT,\n  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,\n  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP\n);\n\n-- Appointments table\nCREATE TABLE appointments (\n  id SERIAL PRIMARY KEY,\n  patient_id UUID REFERENCES patients(id),\n  provider_id UUID REFERENCES healthcare_providers(id),\n  appointment_date TIMESTAMP WITH TIME ZONE NOT NULL,\n  status TEXT NOT NULL,\n  notes TEXT,\n  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,\n  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,\n  deleted_at TIMESTAMP WITH TIME ZONE\n);\n\n-- Transactions table\nCREATE TABLE transactions (\n  id SERIAL PRIMARY KEY,\n  user_id UUID REFERENCES auth.users(id),\n  amount NUMERIC(10,2) NOT NULL,\n  transaction_type TEXT NOT NULL,\n  description TEXT,\n  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP\n);",
-      "styleAttributes": {},
-      "x": 1180,
-      "y": -2880,
-      "width": 620,
-      "height": 720
-    },
-    {
-      "id": "7c327c1467f1ac3d",
-      "type": "link",
-      "url": "https://dribbble.com/",
-      "styleAttributes": {},
-      "x": 2920,
-      "y": -4220,
-      "width": 780,
-      "height": 880
-    },
-    {
-      "id": "c42f2ec800961344",
-      "type": "link",
-      "url": "https://tools.webcrumbs.org/frontend-ai",
-      "styleAttributes": {},
-      "x": 4000,
-      "y": -4220,
-      "width": 760,
-      "height": 880
-    },
-    {
       "id": "4bb06f2a81dd0733",
       "type": "file",
       "file": "7. 🏷️ Misc/Assets/image_2025-03-12_10-58-56 1.jpg",
@@ -165,24 +115,34 @@
       "height": 552
     },
     {
-      "id": "f9f0dffc0e999ea8",
-      "type": "file",
-      "file": "7. 🏷️ Misc/Assets/image_2025-03-12_11-02-05.jpg",
+      "id": "b0c9f5f1911681a5",
+      "type": "text",
+      "text": "# About Doctor",
       "styleAttributes": {},
-      "x": -120,
-      "y": -1032,
-      "width": 759,
-      "height": 496
+      "x": -1240,
+      "y": 2120,
+      "width": 260,
+      "height": 60
     },
     {
-      "id": "3f8e21ed75dfa737",
-      "type": "file",
-      "file": "7. 🏷️ Misc/Assets/Pasted image 20250317164427.png",
+      "id": "c463f38c99516df5",
+      "type": "text",
+      "text": "# Chat Page for Patient ",
       "styleAttributes": {},
-      "x": 1230,
-      "y": -1032,
-      "width": 946,
-      "height": 496
+      "x": -80,
+      "y": 2140,
+      "width": 360,
+      "height": 60
+    },
+    {
+      "id": "f4ad1ca451d1af8b",
+      "type": "text",
+      "text": "# Patient Dashboard",
+      "styleAttributes": {},
+      "x": -1360,
+      "y": -360,
+      "width": 340,
+      "height": 80
     },
     {
       "id": "a3173da81e7cd43f",
@@ -195,24 +155,64 @@
       "height": 100
     },
     {
-      "id": "625918f3bedc92c1",
-      "type": "text",
-      "text": "![[Pasted image 20250317164055.png]]",
+      "id": "def372ddad03995a",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250317164806.png",
       "styleAttributes": {},
-      "x": -980,
-      "y": -360,
-      "width": 580,
-      "height": 280
+      "x": -1240,
+      "y": 80,
+      "width": 765,
+      "height": 400
     },
     {
-      "id": "8a9de47f3e24a676",
-      "type": "text",
-      "text": "# Our Healthcare Professionals ",
+      "id": "77b92a1ca1918c9c",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250318075108.png",
       "styleAttributes": {},
-      "x": 1280,
-      "y": -330,
-      "width": 480,
-      "height": 90
+      "x": -280,
+      "y": 80,
+      "width": 758,
+      "height": 400
+    },
+    {
+      "id": "e357f67f54871963",
+      "type": "text",
+      "text": "# Sign Up",
+      "styleAttributes": {},
+      "x": -120,
+      "y": 600,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "85ee0d7d3dc4d4be",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250318080621.png",
+      "styleAttributes": {},
+      "x": -1240,
+      "y": 740,
+      "width": 764,
+      "height": 401
+    },
+    {
+      "id": "c31466376fc0c74a",
+      "type": "text",
+      "text": "# Medical  Records",
+      "styleAttributes": {},
+      "x": -1100,
+      "y": 1220,
+      "width": 410,
+      "height": 60
+    },
+    {
+      "id": "f9f0dffc0e999ea8",
+      "type": "file",
+      "file": "7. 🏷️ Misc/Assets/image_2025-03-12_11-02-05.jpg",
+      "styleAttributes": {},
+      "x": -120,
+      "y": -1032,
+      "width": 759,
+      "height": 496
     },
     {
       "id": "7873dff448c18c6e",
@@ -245,36 +245,6 @@
       "height": 400
     },
     {
-      "id": "def372ddad03995a",
-      "type": "file",
-      "file": "7. 🏷️ Misc/Assets/Pasted image 20250317164806.png",
-      "styleAttributes": {},
-      "x": -1240,
-      "y": 80,
-      "width": 765,
-      "height": 400
-    },
-    {
-      "id": "77b92a1ca1918c9c",
-      "type": "file",
-      "file": "7. 🏷️ Misc/Assets/Pasted image 20250318075108.png",
-      "styleAttributes": {},
-      "x": -280,
-      "y": 80,
-      "width": 758,
-      "height": 400
-    },
-    {
-      "id": "e3345f8bb064b4ed",
-      "type": "text",
-      "text": "# Sign In",
-      "styleAttributes": {},
-      "x": 820,
-      "y": 600,
-      "width": 260,
-      "height": 60
-    },
-    {
       "id": "f22a72380fe61dd0",
       "type": "text",
       "text": "# Appointment History",
@@ -292,16 +262,6 @@
       "x": -1320,
       "y": 600,
       "width": 300,
-      "height": 60
-    },
-    {
-      "id": "e357f67f54871963",
-      "type": "text",
-      "text": "# Sign Up",
-      "styleAttributes": {},
-      "x": -120,
-      "y": 600,
-      "width": 260,
       "height": 60
     },
     {
@@ -335,14 +295,84 @@
       "height": 400
     },
     {
-      "id": "85ee0d7d3dc4d4be",
+      "id": "7780c726a40234a2",
+      "type": "text",
+      "text": "# Profile Registration ",
+      "styleAttributes": {},
+      "x": -221,
+      "y": 1210,
+      "width": 320,
+      "height": 60
+    },
+    {
+      "id": "7d8d229af17bdef9",
       "type": "file",
-      "file": "7. 🏷️ Misc/Assets/Pasted image 20250318080621.png",
+      "file": "7. 🏷️ Misc/Assets/Pasted image 20250326100552.png",
       "styleAttributes": {},
       "x": -1240,
-      "y": 740,
-      "width": 764,
-      "height": 401
+      "y": 1400,
+      "width": 765,
+      "height": 626
+    },
+    {
+      "id": "8fa12d6d6646665d",
+      "type": "text",
+      "text": "-- Provider Skills table\nCREATE TABLE provider_skills (\n  id SERIAL PRIMARY KEY,\n  provider_id UUID REFERENCES healthcare_providers(id),\n  skill_name TEXT NOT NULL,\n  skill_value INTEGER NOT NULL\n);\n\n-- Medical History table\nCREATE TABLE medical_history (\n  id SERIAL PRIMARY KEY,\n  patient_id UUID REFERENCES patients(id),\n  condition TEXT NOT NULL,\n  diagnosis_date DATE,\n  medication_name TEXT NOT NULL,\n  dosage TEXT,\n  frequency TEXT,\n  start_date DATE,\n  end_date DATE,\n  prescribing_doctor TEXT,\n  notes TEXT,\n  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,\n  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP\n);\n\n-- Appointments table\nCREATE TABLE appointments (\n  id SERIAL PRIMARY KEY,\n  patient_id UUID REFERENCES patients(id),\n  provider_id UUID REFERENCES healthcare_providers(id),\n  appointment_date TIMESTAMP WITH TIME ZONE NOT NULL,\n  status TEXT NOT NULL,\n  notes TEXT,\n  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,\n  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,\n  deleted_at TIMESTAMP WITH TIME ZONE\n);\n\n-- Transactions table\nCREATE TABLE transactions (\n  id SERIAL PRIMARY KEY,\n  user_id UUID REFERENCES auth.users(id),\n  amount NUMERIC(10,2) NOT NULL,\n  transaction_type TEXT NOT NULL,\n  description TEXT,\n  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP\n);",
+      "styleAttributes": {},
+      "x": 1180,
+      "y": -2880,
+      "width": 620,
+      "height": 720
+    },
+    {
+      "id": "7c327c1467f1ac3d",
+      "type": "link",
+      "url": "https://dribbble.com/",
+      "styleAttributes": {},
+      "x": 2920,
+      "y": -4220,
+      "width": 780,
+      "height": 880
+    },
+    {
+      "id": "c42f2ec800961344",
+      "type": "link",
+      "url": "https://tools.webcrumbs.org/frontend-ai",
+      "styleAttributes": {},
+      "x": 4000,
+      "y": -4220,
+      "width": 760,
+      "height": 880
+    },
+    {
+      "id": "625918f3bedc92c1",
+      "type": "text",
+      "text": "![[Pasted image 20250317164055.png]]",
+      "styleAttributes": {},
+      "x": -980,
+      "y": -360,
+      "width": 580,
+      "height": 280
+    },
+    {
+      "id": "8a9de47f3e24a676",
+      "type": "text",
+      "text": "# Our Healthcare Professionals ",
+      "styleAttributes": {},
+      "x": 1280,
+      "y": -330,
+      "width": 480,
+      "height": 90
+    },
+    {
+      "id": "e3345f8bb064b4ed",
+      "type": "text",
+      "text": "# Sign In",
+      "styleAttributes": {},
+      "x": 820,
+      "y": 600,
+      "width": 260,
+      "height": 60
     },
     {
       "id": "fcbbed7db52d52b9",
@@ -363,36 +393,6 @@
       "y": 1210,
       "width": 360,
       "height": 60
-    },
-    {
-      "id": "c31466376fc0c74a",
-      "type": "text",
-      "text": "# Medical  Records",
-      "styleAttributes": {},
-      "x": -1100,
-      "y": 1220,
-      "width": 410,
-      "height": 60
-    },
-    {
-      "id": "7780c726a40234a2",
-      "type": "text",
-      "text": "# Profile Registration ",
-      "styleAttributes": {},
-      "x": -221,
-      "y": 1210,
-      "width": 320,
-      "height": 60
-    },
-    {
-      "id": "7d8d229af17bdef9",
-      "type": "file",
-      "file": "7. 🏷️ Misc/Assets/Pasted image 20250326100552.png",
-      "styleAttributes": {},
-      "x": -1240,
-      "y": 1400,
-      "width": 765,
-      "height": 626
     },
     {
       "id": "0201c4e68acfca8a",

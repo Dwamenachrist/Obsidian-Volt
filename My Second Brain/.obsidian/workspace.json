@@ -11,17 +11,24 @@
             "id": "450c73b86a5b3296",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "1. 📌 Areas/ii 🌱 Personal Development/El Cuidado/UI.canvas",
-                "viewState": {
-                  "x": 4012.540478992291,
-                  "y": 233.1342520888895,
-                  "zoom": -2.1608601103076013
+                "file": "1. 📌 Areas/ii 🌱 Personal Development/Integrion/AI Team.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
                 }
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "UI"
+              "icon": "lucide-file",
+              "title": "AI Team"
             }
           }
         ]
@@ -182,7 +189,12 @@
   },
   "active": "450c73b86a5b3296",
   "lastOpenFiles": [
+    "1. 📌 Areas/ii 🌱 Personal Development/Integrion/Learning AI-Agents.canvas",
+    "1. 📌 Areas/ii 🌱 Personal Development/Integrion/Integrion AI.canvas",
+    "1. 📌 Areas/ii 🌱 Personal Development/Integrion/AI Team.md",
+    "1. 📌 Areas/ii 🌱 Personal Development/El Cuidado/UI.canvas",
     "1. 📌 Areas/ii 🌱 Personal Development/El Cuidado/Untitled.md",
+    "5. 📅 Daily Notes/🔆 20-04-2025.md",
     "5. 📅 Daily Notes/🔆 19-04-2025.md",
     "5. 📅 Daily Notes/🔆 18-04-2025.md",
     "5. 📅 Daily Notes/🔆 17-04-2025.md",
@@ -203,13 +215,8 @@
     "5. 📅 Daily Notes/🔆 14-04-2025.md",
     "1. 📌 Areas/🙏 Bible Study/Prayers.md",
     "5. 📅 Daily Notes/🔆 13-04-2025.md",
-    "1. 📌 Areas/ii 🌱 Personal Development/El Cuidado/UI.canvas",
     "5. 📅 Daily Notes/🔆 12-04-2025.md",
     "5. 📅 Daily Notes/🔆 08-04-2025.md",
-    "1. 📌 Areas/ii 🌱 Personal Development/Integrion/AI Team.md",
-    "1. 📌 Areas/ii 🌱 Personal Development/Integrion/Integrion AI.canvas",
-    "1. 📌 Areas/iv ✨ Creative Projects idea's 💡/✍️ Writing.md",
-    "5. 📅 Daily Notes/🔆 07-04-2025.md",
     "7. 🏷️ Misc/Assets/Pasted image 20250406105549.png",
     "7. 🏷️ Misc/Assets/Pasted image 20250406104142.png",
     "7. 🏷️ Misc/Assets/Pasted image 20250406103802.png",
@@ -232,7 +239,6 @@
     "7. 🏷️ Misc/Assets/Recording 20250320112441.webm",
     "7. 🏷️ Misc/Assets/Recording 20250320113408.webm",
     "1. 📌 Areas/ii 🌱 Personal Development/TechCrush BootCamp/Tasks",
-    "1. 📌 Areas/ii 🌱 Personal Development/Integrion/Learning AI-Agents.canvas",
     "1. 📌 Areas/ii 🌱 Personal Development/Future Interns/Task 3 deadline  20th April",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/Combinatorial Proofs.canvas",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/🗃️ Database Fundermentals (305)/Course Outline.canvas",
