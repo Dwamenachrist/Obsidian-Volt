@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e526098129fea55b",
+        "id": "1c7ef61de940b56f",
         "type": "tabs",
         "children": [
           {
-            "id": "28a728d31e43ee54",
+            "id": "67b0d8689dc8af4d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -174,12 +174,13 @@
       "smart-connections:Open: Smart Chat Conversation": false
     }
   },
-  "active": "28a728d31e43ee54",
+  "active": "67b0d8689dc8af4d",
   "lastOpenFiles": [
+    "5. 📅 Daily Notes/🔆 21-04-2025.md",
+    "1. 📌 Areas/ii 🌱 Personal Development/Integrion/AI Team.md",
     "🔆 02-01-2025.md",
     "1. 📌 Areas/🙏 Bible Study/📜 Sermons.md",
     "🔆 29-01-2025.md",
-    "5. 📅 Daily Notes/🔆 21-04-2025.md",
     "5. 📅 Daily Notes/🔆 16-04-2025.md",
     "1. 📌 Areas/ii 🌱 Personal Development/Termux",
     "5. 📅 Daily Notes/🔆 15-04-2025.md",
@@ -214,7 +215,6 @@
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Machine Learning/SLIDES.md",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Machine Learning/Slide Qusetions.md",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Machine Learning/Sample Answer 2.md",
-    "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/Machine Learning/Sample Answer 1.md",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/Group Project.canvas",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/⚡Problem Set 4.canvas",
     "1. 📌 Areas/i 💻 Computer Science/📚 Courses/1st Semester/⚡Discrete Mathematics (Math 359)/⚡Problem Set 3.canvas",
