@@ -20,8 +20,8 @@ This week run rate of ==10.3k==
 Week 3 
 This week run rate of ==10.4k==
 
-Week days ==10.4k==   * 8
+Week days ==10.4k==   * 8 = 83200
 
-Sat ==6.4k== * 1
-Sun ==3.5k==  * 2
+Sat ==6.4k== * 1. = 6400
+Sun ==3.5k==  * 2 =  
 
