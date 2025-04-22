@@ -7,6 +7,9 @@ This is because  last week we did a ==46.9k== and this week we are doing a ==49.
 #### Month to date
 Month to date is ==171.3k== and a variance of ==6.9k== at ==4.2%==
 
+#### Day on Day
+On Thursday we increased 
+On Friday we we declined by a ==1k== because of the holiday.
 
 #### Forecast for Gross Adds for the end of April
 
