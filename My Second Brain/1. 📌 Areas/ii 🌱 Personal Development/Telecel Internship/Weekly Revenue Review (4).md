@@ -26,3 +26,11 @@ Sat ==6.4k== * 1. = 6400
 Sun ==3.5k==  * 2 =  7000
 96600 + 171379 = 267979
 
+# Reload
+Reload increased by a 348.9k at 6%
+
+#### Why?
+This is because last week we did a 34.5 M
+and we are currently doing a 36.8 M
+
+Month to date 
