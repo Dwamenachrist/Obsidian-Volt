@@ -6,5 +6,7 @@ This is because  last week we did a ==46.9k== and this week we are doing a ==49.
 
 #### Month to date
 Month to date is ==171.3k== and a variance of ==6.9k== at ==4.2%==
+
+
 #### Forecast for Gross Adds for the end of April
 
