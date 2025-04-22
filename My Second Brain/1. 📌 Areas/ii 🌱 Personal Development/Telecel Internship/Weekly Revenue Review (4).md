@@ -20,3 +20,6 @@ This week run rate of ==10.3k==
 Week 3 
 This week run rate of ==10.4k==
 
+
+Sat 
+Sun ==3.5k==
