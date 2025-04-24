@@ -7,3 +7,5 @@ Car Rental App
 
 # 2nd Page
 
+
+![[Screenshot_20250424-114009.png]]
